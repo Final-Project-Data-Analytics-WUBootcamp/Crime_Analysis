@@ -22,6 +22,7 @@ Source URL: https://crime-data-explorer.app.cloud.gov/pages/downloads
 
 For the purposes of our analysis we will be exploring the relationship between time of day and types of crimes being committed that have resulted in an arrest. This data does not represent all reported crimes, only those where an arrest took place. The geographical extent of our analysis will focus on the state of Texas and we will utilize data published from 2017-2020. Prior to 2017 a slightly different schema and file naming system was used; after reviewing the amount of data 4 years provided, it was determine the additional steps of schema and file mapping was not necessary for our purposes.
 
+
 ## First Segment Goal
 
 Sketch It Out: Decide on your overall project, select your question, and build a simple model. You'll connect the model to a fabricated database, using comma-separated values (CSV) or JavaScript Object Notation (JSON) files, to prototype your idea.
@@ -51,11 +52,4 @@ Most of the categorical information has already been made numeric; therefore, ma
 The information is hierarchal in nature; however, for the purpose of our initial analysis only a handful of the tables are necessary:
 
 ![QuickDBD-export (8)](https://user-images.githubusercontent.com/88041368/147418432-0d55ab60-7e09-433b-aae0-179cb7d86d00.png)
-
-## Initial Data Exploration for Subset of Texas Crime: Assaults Only
-![TX_Assaults_County_Map](https://user-images.githubusercontent.com/88041368/147013145-ce9da898-8f15-482c-a270-4a20cbcb8bde.jpg)
-![TX_Assaults_Victim_Demographics](https://user-images.githubusercontent.com/88041368/147013143-f5336f15-6273-451e-9f40-4fa6e662aaa4.jpg)
-![TX_Assaults_ArresteeVsVictim_Age](https://user-images.githubusercontent.com/88041368/147013144-424b52c9-2398-4dae-9dde-2818a6a20dd3.jpg)
-
-[https://public.tableau.com/app/profile/becky2270/viz/FBICrimeDataInitialDataExploration/CountyMap?publish=yes](url)
 
