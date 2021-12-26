@@ -60,5 +60,6 @@ The tables are intended to be used in a relational database
 
 Most of the categorical information has already been made numeric; therefore, many of the tables provided in the bulk download serve as lookup category tables
 
-The information is hierarchal in nature; however, there are a handful of tables that must be merged prior to the linkage to other, subsidiary tables of information
-![image](https://user-images.githubusercontent.com/88041368/146854072-ce907d84-a40b-4a51-9f3c-7164b4e57d3b.png)
+The information is hierarchal in nature; however, for the purpose of our initial analysis only a handful of the tables are necessary:
+
+![QuickDBD-export (8)](https://user-images.githubusercontent.com/88041368/147418432-0d55ab60-7e09-433b-aae0-179cb7d86d00.png)
