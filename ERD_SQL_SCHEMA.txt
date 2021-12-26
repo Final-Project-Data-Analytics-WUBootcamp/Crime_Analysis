@@ -1,0 +1,33 @@
+Incident
+-
+AGENCY_ID fk bigint
+INCIDENT_ID pk bigint 
+INCIDENT_DATE int
+INCIDENT_HOUR int
+CLEARED_EXCEPT_ID fk smallint
+
+Offense
+-
+OFFENSE_ID pk bigint
+INCIDENT_ID fk bigint fk - Incident.INCIDENT_ID
+OFFENSE_TYPE_ID fk bigint
+
+Offense_Type
+-
+OFFENSE_TYPE_ID pk bigint
+OFFENSE_ID fk bigint fk - Offense.OFFENSE_ID
+OFFENSE_CODE varchar(5)
+OFFENSE_NAME varchar(100)
+CRIME_AGAINST varchar(100)
+OFFENSE_CATEGORY_NAME varchar(100)
+OFFENSE_GROUP varchar(5)
+
+Agency
+-
+AGENCY_ID pk int fk - Incident.AGENCY_ID
+PUB_AGENCY_NAME varchar(100)
+AGENCY_TYPE_NAME varchar(30)
+POPULATION int
+SUBURBAN_AREA_FLAG varchar(1)
+POPULATION_GROUP_CODE int
+COUNTY_NAME varchar(100)

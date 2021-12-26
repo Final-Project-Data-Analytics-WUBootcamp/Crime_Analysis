@@ -22,17 +22,6 @@ Source URL: https://crime-data-explorer.app.cloud.gov/pages/downloads
 
 For the purposes of our analysis we will be exploring the relationship between time of day and types of crimes being committed that have resulted in an arrest. This data does not represent all reported crimes, only those where an arrest took place. The geographical extent of our analysis will focus on the state of Texas and we will utilize data published from 2017-2020. Prior to 2017 a slightly different schema and file naming system was used; after reviewing the amount of data 4 years provided, it was determine the additional steps of schema and file mapping was not necessary for our purposes.
 
-## Technologies
-
-python: pandas, matplotlib, scikitlearn, numpy, pyspark
-
-AWS: S3, postgres, pgadmin
-
-Tableau, css, javascript, flask ,html, Excel, quickdatabasediagrams.com (ERD), bootstrap
-
-Google Colab, Jupyter Notebook, R, Github, Gitbash
-
-IDE: python3; mlenv
 
 ## First Segment Goal
 
@@ -63,3 +52,4 @@ Most of the categorical information has already been made numeric; therefore, ma
 The information is hierarchal in nature; however, for the purpose of our initial analysis only a handful of the tables are necessary:
 
 ![QuickDBD-export (8)](https://user-images.githubusercontent.com/88041368/147418432-0d55ab60-7e09-433b-aae0-179cb7d86d00.png)
+
