@@ -6,7 +6,7 @@ The FBI's Crime Data Explorer (CDE) aims to provide transparency, create easier 
 
 ### What is the relationship between time of day and the type of crime being committed?
 
-*Type of crime will be a classification of the data*
+*Type of crime will be a classified as crime against persons, society or property*
 
 ## Data Selection
 
@@ -37,10 +37,6 @@ IDE: python3; mlenv
 ## First Segment Goal
 
 Sketch It Out: Decide on your overall project, select your question, and build a simple model. You'll connect the model to a fabricated database, using comma-separated values (CSV) or JavaScript Object Notation (JSON) files, to prototype your idea.
-
-## First Segment Role
-
-Circle: The member in the circle role will create a mockup of a database with a set of sample data, or even fabricated data. This will ensure the database will work seamlessly with the rest of the project.
 
 ## Preprocessing Sample Data
 
