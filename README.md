@@ -67,3 +67,17 @@ The information is hierarchal in nature; however, for the purpose of our initial
 
 
 ## Machine Learning
+
+#### Segment 1: 
+This machine learning model predicts Crime_Against (Person, Society, Property) based on the hour of the day. Future enhancements include month of the year and possibly location. 
+
+Example data pulled from Texas_2020.csv. 
+
+The machine learning model is supervised.
+
+Naive Random Oversampling and Smote were originally used in the first segment. Second segment will include other methods such as Undersampling, Combination (Over and Under), Sampling, and Ensemble Learners. 
+
+#### Segment 2:
+Data pulled from AWS RDS Postgress database.
+
+
