@@ -6,7 +6,7 @@ The FBI's Crime Data Explorer (CDE) aims to provide transparency, create easier 
 
 ### What is the relationship between time of day and the type of crime being committed?
 
-*Type of crime will be a classification of the data*
+*Type of crime will be a classified as crime against persons, society or property*
 
 ## Data Selection
 
