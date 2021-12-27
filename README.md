@@ -70,19 +70,19 @@ The information is hierarchal in nature; however, for the purpose of our initial
 
 Crime-data Dataset 2020 Upload Successful :white_check_mark:
 
-![Data 2020](blob/Alejandra/resources/Texas%202020.png)
+![Data 2020](Alejandra/resources/Texas%202020.png)
 
 Crime-data Dataset 2019 Upload Successful :white_check_mark:
 
-![Data 2019](blob/Alejandra/resources/Texas%202019.png)
+![Data 2019](Alejandra/resources/Texas%202019.png)
 
 Crime-data Dataset 2018 Upload Successful :white_check_mark:
 
-![Data 2018](blob/Alejandra/resources/Texas%202018.png)
+![Data 2018](Alejandra/resources/Texas%202018.png)
 
 Crime-data Dataset 2017 Upload Successful :white_check_mark:
 
-![Data 2017](blob/Alejandra/resources/Texas%202017.png)
+![Data 2017](Alejandra/resources/Texas%202017.png)
 
 
 ## Machine Learning
