@@ -74,6 +74,3 @@ The information is hierarchal in nature; however, for the purpose of our initial
 ![TX_Assaults_County_Map](https://user-images.githubusercontent.com/88041368/147013145-ce9da898-8f15-482c-a270-4a20cbcb8bde.jpg)
 ![TX_Assaults_Victim_Demographics](https://user-images.githubusercontent.com/88041368/147013143-f5336f15-6273-451e-9f40-4fa6e662aaa4.jpg)
 ![TX_Assaults_ArresteeVsVictim_Age](https://user-images.githubusercontent.com/88041368/147013144-424b52c9-2398-4dae-9dde-2818a6a20dd3.jpg)
-
-[https://public.tableau.com/app/profile/becky2270/viz/FBICrimeDataInitialDataExploration/CountyMap?publish=yes](url)
-
