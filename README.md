@@ -7,16 +7,20 @@
 - [x] Import SparkFiles from PySpark into [^1]: Move your ETL process to the cloud. File: [Colab Crime_data_pgAdmin notebook](https://colab.research.google.com/drive/1fM4oXPtmu0VE950IbB4zbEU86xDZ5qt4?usp=sharing).
 - [x] Load the DataFrames into the table. Configuration set up to allow the connection between PgAdmin and AWS Server.
 
-### Query database to check successful upload :trackball:
+### Successful Upload Datasets PySpark ETL :trackball:
 
 Crime-data Dataset 2020 Upload Successful :white_check_mark:
+
 ![Data 2020](resources/Texas%202020.png)
 
-Crime-data Dataset 2020 Upload Successful :white_check_mark:
+Crime-data Dataset 2019 Upload Successful :white_check_mark:
+
 ![Data 2019](resources/Texas%202019.png)
 
-Crime-data Dataset 2020 Upload Successful :white_check_mark:
+Crime-data Dataset 2018 Upload Successful :white_check_mark:
+
 ![Data 2018](resources/Texas%202018.png)
 
-Crime-data Dataset 2020 Upload Successful :white_check_mark:
+Crime-data Dataset 2017 Upload Successful :white_check_mark:
+
 ![Data 2017](resources/Texas%202017.png)
