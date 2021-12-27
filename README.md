@@ -4,7 +4,7 @@
 ### Task List -> Week 19-26th
 - [x] Mock the scenario using four datasets stored in S3 and set in a RDS database.
 - [x] Run the datasets from 2017, 2018, 2019 and 2020 by using Spark to write directly to our Postgres database.
-- [x] Import SparkFiles from PySpark into [^1]: Move your ETL process to the cloud. File:[Crime_data_pgAdmin notebook] (https://colab.research.google.com/drive/1fM4oXPtmu0VE950IbB4zbEU86xDZ5qt4?usp=sharing).
+- [x] Import SparkFiles from PySpark into [^1]: Move your ETL process to the cloud. File: [Colab Crime_data_pgAdmin notebook](https://colab.research.google.com/drive/1fM4oXPtmu0VE950IbB4zbEU86xDZ5qt4?usp=sharing).
 - [x] Load the DataFrames into the table. Configuration set up to allow the connection between PgAdmin and AWS Server.
 
 ### Query database to check successful upload :trackball:
