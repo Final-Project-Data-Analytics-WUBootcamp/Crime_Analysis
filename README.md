@@ -66,6 +66,25 @@ The information is hierarchal in nature; however, for the purpose of our initial
 ![QuickDBD-export (8)](https://user-images.githubusercontent.com/88041368/147418432-0d55ab60-7e09-433b-aae0-179cb7d86d00.png)
 
 
+### Successful Upload Datasets PySpark ETL
+
+Crime-data Dataset 2020 Upload Successful :white_check_mark:
+
+![Data 2020](blob/Alejandra/resources/Texas%202020.png)
+
+Crime-data Dataset 2019 Upload Successful :white_check_mark:
+
+![Data 2019](blob/Alejandra/resources/Texas%202019.png)
+
+Crime-data Dataset 2018 Upload Successful :white_check_mark:
+
+![Data 2018](blob/Alejandra/resources/Texas%202018.png)
+
+Crime-data Dataset 2017 Upload Successful :white_check_mark:
+
+![Data 2017](blob/Alejandra/resources/Texas%202017.png)
+
+
 ## Machine Learning
 
 #### Segment 1: 
