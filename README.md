@@ -64,3 +64,6 @@ Most of the categorical information has already been made numeric; therefore, ma
 The information is hierarchal in nature; however, for the purpose of our initial analysis only a handful of the tables are necessary:
 
 ![QuickDBD-export (8)](https://user-images.githubusercontent.com/88041368/147418432-0d55ab60-7e09-433b-aae0-179cb7d86d00.png)
+
+
+## Machine Learning
