@@ -74,3 +74,14 @@ The information is hierarchal in nature; however, for the purpose of our initial
 ![TX_Assaults_County_Map](https://user-images.githubusercontent.com/88041368/147013145-ce9da898-8f15-482c-a270-4a20cbcb8bde.jpg)
 ![TX_Assaults_Victim_Demographics](https://user-images.githubusercontent.com/88041368/147013143-f5336f15-6273-451e-9f40-4fa6e662aaa4.jpg)
 ![TX_Assaults_ArresteeVsVictim_Age](https://user-images.githubusercontent.com/88041368/147013144-424b52c9-2398-4dae-9dde-2818a6a20dd3.jpg)
+
+# Segment 2 Deliverables
+
+After some data visualization attempts with our previous iterations of the dataset the following was identified:
+
+•	Our data was incredibly skewed towards Crimes Against Persons, more specifically assaults, because we merged victim data information. When we did this, and removed NaN records, we removed all arrests where victim information was not available. In the Crimes Against category, there is often times not a victim for crime against property and/or society.
+
+o	By correcting this error, the majority of our arrests are actually for crimes against society
+
+•	Our independent variables are mostly all categorical which is problematic for many machine learning models; linear regression is not an option. After some initial research, the best way forward may be to consider a logistic regression model. Specifically, a Multinomial Logistic Regression Model could be our best way forward.
+
