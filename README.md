@@ -83,5 +83,13 @@ After some data visualization attempts with our previous iterations of the datas
 
 o	By correcting this error, the majority of our arrests are actually for crimes against society
 
+## With Victim Information Joined to the Data
+*1=Person, 2=Property, 3=Society*
+![Adding_Victim_Info](https://user-images.githubusercontent.com/88041368/148650854-4eed1198-893e-499b-8476-e2c393654764.png)
+## Without Victim Information Joined to the Data
+*1=Person, 2=Property, 3=Society*
+![Removing_Victim_Info](https://user-images.githubusercontent.com/88041368/148650853-e4a7a429-8b93-4e37-8e39-e7ab2e1cb7fc.png)
+
+
 •	Our independent variables are mostly all categorical which is problematic for many machine learning models; linear regression is not an option. After some initial research, the best way forward may be to consider a logistic regression model. Specifically, a Multinomial Logistic Regression Model could be our best way forward.
 
