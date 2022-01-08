@@ -92,4 +92,5 @@ o	By correcting this error, the majority of our arrests are actually for crimes 
 
 
 •	Our independent variables are mostly all categorical which is problematic for many machine learning models; linear regression is not an option. After some initial research, the best way forward may be to consider a logistic regression model. Specifically, a Multinomial Logistic Regression Model could be our best way forward.
+https://machinelearningmastery.com/multinomial-logistic-regression-with-python/
 
