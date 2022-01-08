@@ -102,4 +102,4 @@ Data pulled from AWS RDS Postgress database.
 
 ## HEROKU
 
-# The **main branch** of the Crime_Analysis repo has been connected to Heroku Dashboard. It is found as ![crime-dashboard-analysis](https://dashboard.heroku.com/apps/crime-dashboard-analysis)
+### The **main branch** of the Crime_Analysis repo has been connected to Heroku Dashboard. It is found as [crime-dashboard-analysis](https://dashboard.heroku.com/apps/crime-dashboard-analysis)
