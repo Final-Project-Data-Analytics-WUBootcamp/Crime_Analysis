@@ -148,12 +148,11 @@ ORDER BY j.ARR_RACE_ID;
 #### [Random Forest Model](https://colab.research.google.com/drive/1ezdCrXePPz7lmU7CXnlZGEi7A3TekzIT#scrollTo=lnpzkmNhWORW)
 
 ### Google Colab Links to Other Models
-#### [SVM Model](https://colab.research.google.com/drive/1xrVmeHoE1cm7Y5gHZlM4VNrNR9gCYp4e#scrollTo=wnmIJh-53qV0)
-#### [Neural Network](https://colab.research.google.com/drive/1Wjht48glkqfpHDe8giguAvLEaeCmaE91#scrollTo=wuxINuJNgfRK)
-#### [Neural Network Random Foreset Model](https://colab.research.google.com/drive/1FpEZQJmgGxJiR9xBvtBUKDpNEJo-Il10#scrollTo=wcvYZEJJMPd4)
-#### [Multinomial](https://colab.research.google.com/drive/1L5k4pgTMPa2MmlKBp3bMVV0ruvfL2qjM#scrollTo=V-lSUczsTcWg)
-
-For additional Models, please look under Matthew Lane's branch for jupyter notebook files
+- #### [SVM Model](https://colab.research.google.com/drive/1xrVmeHoE1cm7Y5gHZlM4VNrNR9gCYp4e#scrollTo=wnmIJh-53qV0)
+- #### [Neural Network](https://colab.research.google.com/drive/1Wjht48glkqfpHDe8giguAvLEaeCmaE91#scrollTo=wuxINuJNgfRK)
+- #### [Neural Network Random Foreset Model](https://colab.research.google.com/drive/1FpEZQJmgGxJiR9xBvtBUKDpNEJo-Il10#scrollTo=wcvYZEJJMPd4)
+- #### [Multinomial](https://colab.research.google.com/drive/1L5k4pgTMPa2MmlKBp3bMVV0ruvfL2qjM#scrollTo=V-lSUczsTcWg)
+- For additional Models, please look under Matthew Lane's branch for jupyter notebook files
 
 ### Machine Learning Overview
 Machine Learning is the field of study that gives computers the capability to learn without being explicitly programmed - Source: Geeks for Geeks
