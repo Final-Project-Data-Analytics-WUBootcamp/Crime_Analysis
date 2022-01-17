@@ -110,17 +110,27 @@ https://colab.research.google.com/drive/1L5k4pgTMPa2MmlKBp3bMVV0ruvfL2qjM#scroll
 For additional Models, please look under Matthew Lane's branch for jupyter notebook files
 
 
-#### Segment 1: 
-This machine learning model predicts Crime_Against (Person, Society, Property) based on the hour of the day. Future enhancements include month of the year and possibly location. 
+#### Make sure to document how it ties into the project
+- Like the main topic of this project. Our machine learning model is exploring crimes against in the state of Texas. Using  the data from the last four years, we are able to create a supervised machine learning model by inputting large amounts of data for the model to train on, so it can predict which type of crime against is going to be committed.
+#### There needs to be a description of the model as well as any preprocessing that was involved
+- adsf
+#### Additionally, capture an interpretation of how accurate, precise, or sensitive the model is.
+- dsaf
+#### If you had more time, where would you like to investigate for finer tuning?
+- asd
+### There are several questions to keep in mind as you work through this segment:
+- asdf
+#### How does it work?
+- asdf
+#### Why this specific model?
+- asdf
+#### What is the model's accuracy?
+- asdf
+#### If there are statistics involved, what stats are being included in analysis and why?
+- asdf
+#### If no statistics are involved, what would you include if you had more time?
+- asdf
 
-Example data pulled from Texas_2020.csv. 
-
-The machine learning model is supervised.
-
-Naive Random Oversampling and Smote were originally used in the first segment. Second segment will include other methods such as Undersampling, Combination (Over and Under), Sampling, and Ensemble Learners. 
-
-#### Segment 2:
-Data pulled from AWS RDS Postgress database.
 
 
 ## HEROKU  :pushpin:
