@@ -92,7 +92,7 @@ Crime-data Dataset 2017 Upload Successful :white_check_mark:
 ### Google Colab Link ETL process from AWS to pdAdmin
 [AWS_database_connect_pgAdmin](https://colab.research.google.com/drive/14BlO0zgqK5SQ78v0lvVnbCD664GdwQ6f#scrollTo=bvY30Mslbgis)
 
-### Prove of work in two tables running SQL commands in pgAdmin
+### Proof of work in two tables running SQL commands in pgAdmin
 
 ```
 --- FIRST CREATE THE SCHEMA
