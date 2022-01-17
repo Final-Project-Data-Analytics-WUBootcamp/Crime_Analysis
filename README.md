@@ -10,6 +10,8 @@
 
 ## Google Slides
 https://docs.google.com/presentation/d/1QLSF3Q7AoVnUGJ1b3vpzSRCFdUsbW5BrnfG1aPIo6k0/edit#slide=id.g10d9a689256_0_80
+[Google Slides](https://docs.google.com/presentation/d/1QLSF3Q7AoVnUGJ1b3vpzSRCFdUsbW5BrnfG1aPIo6k0/edit#slide=id.g10d9a689256_0_80)
+
 
 ## Data Selection
 
