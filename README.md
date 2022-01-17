@@ -104,3 +104,47 @@ Data pulled from AWS RDS Postgress database.
 
 ### The **main branch** of the Crime_Analysis repo has been connected to ```Heroku Dashboard```. 
 It is named [crime-dashboard-analysis](https://dashboard.heroku.com/apps/crime-dashboard-analysis). It is linked to this Git repo.
+
+________________________________________________________________________________________________________________________________________________________________
+
+# Segment 2 Deliverables for Data Analysis and Visualization (Becky)
+
+After some data visualization attempts with our previous iterations of the dataset the following was identified:
+
+•	Our data was incredibly skewed towards Crimes Against Persons, more specifically assaults, because we merged victim data information. When we did this, and removed NaN records, we removed all arrests where victim information was not available. In the Crimes Against category, there is often times not a victim for crime against property and/or society.
+
+o	By correcting this error, the majority of our arrests are actually for crimes against society
+
+## With Victim Information Joined to the Data
+*1=Person, 2=Property, 3=Society*
+![Adding_Victim_Info](https://user-images.githubusercontent.com/88041368/148650854-4eed1198-893e-499b-8476-e2c393654764.png)
+## Without Victim Information Joined to the Data
+*1=Person, 2=Property, 3=Society*
+![Removing_Victim_Info](https://user-images.githubusercontent.com/88041368/148650853-e4a7a429-8b93-4e37-8e39-e7ab2e1cb7fc.png)
+
+
+•	Our independent variables are mostly all categorical which is problematic for many machine learning models; linear regression is not an option. After some initial research, the best way forward may be to consider a logistic regression model. Specifically, a Multinomial Logistic Regression Model should be explored.
+https://machinelearningmastery.com/multinomial-logistic-regression-with-python/
+
+## Visualizations Conducted in Tableau to Further Explore our Data and Conduct Additional Analysis
+
+![Slide1](https://user-images.githubusercontent.com/88041368/149043761-748acf72-cf89-4864-8e23-49e83d34ee42.JPG)
+
+![Slide2](https://user-images.githubusercontent.com/88041368/149043762-ed817023-5630-4361-be97-795dc5febc00.JPG)
+
+![Slide3](https://user-images.githubusercontent.com/88041368/149043763-f4ff8b79-0179-4f36-8d10-9a9b102f7ee1.JPG)
+
+![Slide4](https://user-images.githubusercontent.com/88041368/149043759-3a1c7ffb-d486-40a2-b714-ee37f6e5cb00.JPG)
+
+## Tableau dashboard initial draft is posted on Tableau Public so we can begin to discuss necessary changes and design our website's html around the embedded visualization.
+
+### This dashboard is dynamic; when you click on a county, all the other data visualizations filter. The dashboard can be viewed here: https://public.tableau.com/app/profile/becky2270/viz/DRAFT_TEXAS_NIBRS_2017to2020_BJones/Dashboard1?publish=yes
+
+I’ve conducted a Tableau Blend Relationship between the raw arrest data and additional sociodemographic data I was able to find on Texas counties. The additional sociodemographic data was produced by the CDC’s Agency for Toxic Substances and Disease Registry for the annual Social Vulnerability Study. SVI provides specific socially and spatially relevant information to help public health officials and local planners better prepare communities to respond to emergency events such as severe weather, floods, disease outbreaks, or chemical exposure. This data also allowed me to generate additional data fields specific to our crime data.
+
+•	Arrest Rate per 100 Residents (Total Arrests per County/Total Population per County * 100)
+
+•	Estimated Arrests per Officer (Total Arrests per County/Total Officers per County)
+
+![TEXAS_NIBRS_2017to2020](https://user-images.githubusercontent.com/88041368/149702817-edf4556c-0ec3-44a1-9eb7-0eee3d4441fd.jpg)
+
