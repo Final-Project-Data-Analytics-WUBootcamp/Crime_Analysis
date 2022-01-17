@@ -95,7 +95,8 @@ Crime-data Dataset 2017 Upload Successful :white_check_mark:
 https://colab.research.google.com/drive/1ezdCrXePPz7lmU7CXnlZGEi7A3TekzIT#scrollTo=lnpzkmNhWORW
 
 
-### Google Colab Links Other Models
+### Google Colab Links to Other Models
+
 #### SVM Model
 https://colab.research.google.com/drive/1xrVmeHoE1cm7Y5gHZlM4VNrNR9gCYp4e#scrollTo=wnmIJh-53qV0
 #### Neural Network
