@@ -174,7 +174,7 @@ Like the main topic of this project. Our machine learning model is exploring cri
 
 The Random Forest had the best results of the machine learning models. See below image for the accuracy scores of these models. 
 
-![SupervisedMachineLearning](/Images/SupervisedMachineLearningCrimesAgainst.PNG)
+![SupervisedMachineLearning](/Images/AccuracyScore.PNG)
 
 
 
