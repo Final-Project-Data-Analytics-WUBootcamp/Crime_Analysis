@@ -4,7 +4,7 @@
 
 ## Working Question:
 
-### What is the relationship between time of day and the type of crime being committed?
+### Can we predict  the type of of crime that will take place based on a variety of spatial, temporal and categorical factors?
 
 *Type of crime will be a classified as crime against persons, society or property*
 
