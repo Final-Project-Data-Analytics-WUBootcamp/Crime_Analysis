@@ -163,6 +163,16 @@ https://colab.research.google.com/drive/1L5k4pgTMPa2MmlKBp3bMVV0ruvfL2qjM#scroll
 For additional Models, please look under Matthew Lane's branch for jupyter notebook files
 
 ### Machine Learning Overview
+Machine Learning is the field of study that gives computers the capability to learn without being explicitly programmed - Source: Geeks for Geeks
+
+In this project we used Supervised Machine Learning models to predict our topic. 
+- In supervised machine learning, the computer is fed example inputs and their desired outputs. Then the computer uses its learnings to generate a general rule that maps inputs and outputs. 
+- The majority of practical machine learning uses supervised learning.
+
+Like the main topic of this project. Our machine learning model is exploring crimes against in the state of Texas. Using  the data from the last four years, we are able to create a supervised machine learning model by inputting large amounts of data for the model to train on so it can predict which type of crime against is going to be committed.
+
+
+
 #### Make sure to document how it ties into the project
 - Like the main topic of this project. Our machine learning model is exploring crimes against in the state of Texas. Using  the data from the last four years, we are able to create a supervised machine learning model by inputting large amounts of data for the model to train on, so it can predict which type of crime against is going to be committed.
 #### There needs to be a description of the model as well as any preprocessing that was involved
