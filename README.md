@@ -9,8 +9,7 @@
 *Type of crime will be a classified as crime against persons, society or property*
 
 ## Google Slides
-
-![Google Slides](https://docs.google.com/presentation/d/1QLSF3Q7AoVnUGJ1b3vpzSRCFdUsbW5BrnfG1aPIo6k0/edit#slide=id.g10d9a689256_0_80)
+Click [here]https://docs.google.com/presentation/d/1QLSF3Q7AoVnUGJ1b3vpzSRCFdUsbW5BrnfG1aPIo6k0/edit#slide=id.g10d9a689256_0_80) to go to our Google slides
 
 ## Data Selection
 
