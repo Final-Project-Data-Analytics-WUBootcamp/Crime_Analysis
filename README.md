@@ -173,32 +173,25 @@ Like the main topic of this project. Our machine learning model is exploring cri
 ![SupervisedMachineLearning](/Images/SupervisedMachineLearningCrimesAgainst.PNG)
 
 The Random Forest had the best results of the machine learning models. See below image for the accuracy scores of these models. 
+- This model uses a Multiclass classification Random Decision Forest. The Random Forest creates a set of decision trees from a randomly selected subset of the training set. It then collects votes from each tree. Then the votes are counted to train the model and make predictions
+- This model has a potential for weighting variables to highly because the data is categorical utilizing the random forest model. 
 
 ![SupervisedMachineLearning](/Images/AccuracyScore.PNG)
 
+Some of the preprocessing to prep the model for machine learning includes:
+- Importing Libraries
+- Connecting to RDS database and bring in tables
+- Checking data types
+- Exclude any null values
+- Look for the number of unique values in each column
+- Bin data with large numbers of unique values
+- Create a correlation matrix to find any columns that can be dropped
+- Drop columns interfering with the accuracy score
 
-
-#### Make sure to document how it ties into the project
-- Like the main topic of this project. Our machine learning model is exploring crimes against in the state of Texas. Using  the data from the last four years, we are able to create a supervised machine learning model by inputting large amounts of data for the model to train on, so it can predict which type of crime against is going to be committed.
-#### There needs to be a description of the model as well as any preprocessing that was involved
-- adsf
-#### Additionally, capture an interpretation of how accurate, precise, or sensitive the model is.
-- dsaf
-#### If you had more time, where would you like to investigate for finer tuning?
-- asd
-### There are several questions to keep in mind as you work through this segment:
-- asdf
-#### How does it work?
-- asdf
-#### Why this specific model?
-- asdf
-#### What is the model's accuracy?
-- asdf
-#### If there are statistics involved, what stats are being included in analysis and why?
-- asdf
-#### If no statistics are involved, what would you include if you had more time?
-- asdf
-
+If more time was available i would:
+- Investigate bringing in new data sets to join in on the table to help increase the accuracy score. 
+- Test additional machine learning algorithms that are great with multi-class classification categorical data types. 
+- Run the machine learning model with a different dependent variable such as the “suspect using id”
 
 
 ## HEROKU  :pushpin:
