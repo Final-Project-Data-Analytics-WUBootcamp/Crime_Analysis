@@ -149,7 +149,6 @@ https://colab.research.google.com/drive/1ezdCrXePPz7lmU7CXnlZGEi7A3TekzIT#scroll
 
 
 ### Google Colab Links to Other Models
-
 #### SVM Model
 https://colab.research.google.com/drive/1xrVmeHoE1cm7Y5gHZlM4VNrNR9gCYp4e#scrollTo=wnmIJh-53qV0
 #### Neural Network
@@ -170,6 +169,10 @@ In this project we used Supervised Machine Learning models to predict our topic.
 - The majority of practical machine learning uses supervised learning.
 
 Like the main topic of this project. Our machine learning model is exploring crimes against in the state of Texas. Using  the data from the last four years, we are able to create a supervised machine learning model by inputting large amounts of data for the model to train on so it can predict which type of crime against is going to be committed.
+
+![SupervisedMachineLearning](/Images/SupervisedMachineLearningCrimesAgainst.PNG)
+
+Images/SupervisedMachineLearningCrimesAgainst.PNG
 
 
 
