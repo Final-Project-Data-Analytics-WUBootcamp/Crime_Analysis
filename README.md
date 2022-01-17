@@ -9,7 +9,8 @@
 *Type of crime will be a classified as crime against persons, society or property*
 
 ## Google Slides
-https://docs.google.com/presentation/d/1QLSF3Q7AoVnUGJ1b3vpzSRCFdUsbW5BrnfG1aPIo6k0/edit#slide=id.g10d9a689256_0_80
+
+![Google Slides](https://docs.google.com/presentation/d/1QLSF3Q7AoVnUGJ1b3vpzSRCFdUsbW5BrnfG1aPIo6k0/edit#slide=id.g10d9a689256_0_80)
 
 ## Data Selection
 
@@ -96,8 +97,11 @@ Crime-data Dataset 2017 Upload Successful :white_check_mark:
 
 ### Google Colab Links Other Models
 ![SVM Model](https://colab.research.google.com/drive/1xrVmeHoE1cm7Y5gHZlM4VNrNR9gCYp4e#scrollTo=wnmIJh-53qV0)
+
 ![Neural Network](https://colab.research.google.com/drive/1Wjht48glkqfpHDe8giguAvLEaeCmaE91#scrollTo=wuxINuJNgfRK)
+
 ![Neural Network Random Forest Model](https://colab.research.google.com/drive/1FpEZQJmgGxJiR9xBvtBUKDpNEJo-Il10#scrollTo=wcvYZEJJMPd4)
+
 ![Multinomial](https://colab.research.google.com/drive/1L5k4pgTMPa2MmlKBp3bMVV0ruvfL2qjM#scrollTo=V-lSUczsTcWg)
 
 For additional Models, please look under Matthew Lane's branch for jupyter notebook files
