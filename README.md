@@ -87,6 +87,59 @@ Crime-data Dataset 2017 Upload Successful :white_check_mark:
 
 ![Data 2017](https://github.com/Final-Project-Data-Analytics-WUBootcamp/Crime_Analysis/blob/Alejandra/resources/Texas%202017.png)
 
+## AWS connecting with PostgreSQL
+
+### Google Colab Link ETL process from AWS to pdAdmin
+[AWS_database_connect_pgAdmin](https://colab.research.google.com/drive/14BlO0zgqK5SQ78v0lvVnbCD664GdwQ6f#scrollTo=bvY30Mslbgis)
+
+### Prove of work in two tables running SQL commands in pgAdmin
+
+```
+--- FIRST CREATE THE SCHEMA
+
+CREATE TABLE Jan8_TX_data_for_ML (
+	INCIDENT_MONTH INT NOT NULL,
+	INCIDENT_HOUR INT NOT NULL,
+    ARR_AGE_NUM INT NOT NULL,
+    ARR_SEX_CODE INT NOT NULL,
+    ARR_RACE_ID INT NOT NULL,
+    ARR_RESIDENT_CODE INT NOT NULL,
+    LOCATION_ID INT NOT NULL,
+    SUSPECT_USING_ID INT NOT NULL,
+    AGENCY_TYPE_NAME INT NOT NULL,
+    POPULATION INT NOT NULL,
+    SUBURBAN_AREA_FLAG INT NOT NULL,
+    TOTAL_EMPLOYEES INT,
+    OFFENSE_TYPE_ID INT NOT NULL,
+    AGENCY_ID INT NOT NULL,
+    CRIME_AGAINST INT NOT NULL,
+    FOREIGN KEY (ARR_RACE_ID) REFERENCES final_REF_RACE (RACE_ID)  
+);
+
+CREATE TABLE final_REF_RACE (
+    RACE_ID INT NOT NULL,
+    RACE_CODE VARCHAR NOT NULL,
+    RACE_DESC VARCHAR NOT NULL,
+    SORT_ORDER INT NOT NULL,
+    START_YEAR INT,
+    END_YEAR INT,
+    NOTES VARCHAR,
+    PRIMARY KEY (RACE_ID)
+);
+
+--- THEN JOIN TABLES
+
+SELECT DISTINCT j.ARR_RACE_ID, f.RACE_DESC
+FROM Jan8_TX_data_for_ML AS j
+LEFT JOIN  final_REF_RACE AS f
+ON f.RACE_ID = j.ARR_RACE_ID
+ORDER BY j.ARR_RACE_ID;
+
+```
+### Sucessful LEFT JOIN in PostgreSQL
+
+![Join_Crime_tables](https://github.com/Final-Project-Data-Analytics-WUBootcamp/Crime_Analysis/blob/Alejandra/JOIN_TABLES.png#gh-dark-mode-only)
+
 
 ## Machine Learning
 
