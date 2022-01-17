@@ -109,7 +109,7 @@ https://colab.research.google.com/drive/1L5k4pgTMPa2MmlKBp3bMVV0ruvfL2qjM#scroll
 
 For additional Models, please look under Matthew Lane's branch for jupyter notebook files
 
-
+### Machine Learning Overview
 #### Make sure to document how it ties into the project
 - Like the main topic of this project. Our machine learning model is exploring crimes against in the state of Texas. Using  the data from the last four years, we are able to create a supervised machine learning model by inputting large amounts of data for the model to train on, so it can predict which type of crime against is going to be committed.
 #### There needs to be a description of the model as well as any preprocessing that was involved
