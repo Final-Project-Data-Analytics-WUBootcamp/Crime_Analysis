@@ -168,7 +168,7 @@ In this project we used Supervised Machine Learning models to predict our topic.
 - In supervised machine learning, the computer is fed example inputs and their desired outputs. Then the computer uses its learnings to generate a general rule that maps inputs and outputs. 
 - The majority of practical machine learning uses supervised learning.
 
-Like the main topic of this project. Our machine learning model is exploring crimes against in the state of Texas. Using  the data from the last four years, we are able to create a supervised machine learning model by inputting large amounts of data for the model to train on so it can predict which type of crime against is going to be committed.
+Like the main topic of this project. Our machine learning model is exploring crimes against in the state of Texas. Using the data from the last four years, we are able to create a supervised machine learning model by inputting large amounts of data for the model to train on so it can predict which type of crime against is going to be committed.
 
 ![SupervisedMachineLearning](/Images/SupervisedMachineLearningCrimesAgainst.PNG)
 
@@ -188,7 +188,7 @@ Some of the preprocessing to prep the model for machine learning includes:
 - Create a correlation matrix to find any columns that can be dropped
 - Drop columns interfering with the accuracy score
 
-If more time was available i would:
+If more time was available I would:
 - Investigate bringing in new data sets to join in on the table to help increase the accuracy score. 
 - Test additional machine learning algorithms that are great with multi-class classification categorical data types. 
 - Run the machine learning model with a different dependent variable such as the “suspect using id”
