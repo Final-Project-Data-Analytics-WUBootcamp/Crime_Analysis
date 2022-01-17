@@ -90,6 +90,19 @@ Crime-data Dataset 2017 Upload Successful :white_check_mark:
 
 ## Machine Learning
 
+### Google Colab Link Main Model
+![Random Forest Model](https://colab.research.google.com/drive/1ezdCrXePPz7lmU7CXnlZGEi7A3TekzIT#scrollTo=lnpzkmNhWORW)
+
+
+### Google Colab Links Other Models
+![SVM Model](https://colab.research.google.com/drive/1xrVmeHoE1cm7Y5gHZlM4VNrNR9gCYp4e#scrollTo=wnmIJh-53qV0)
+![Neural Network](https://colab.research.google.com/drive/1Wjht48glkqfpHDe8giguAvLEaeCmaE91#scrollTo=wuxINuJNgfRK)
+![Neural Network Random Forest Model](https://colab.research.google.com/drive/1FpEZQJmgGxJiR9xBvtBUKDpNEJo-Il10#scrollTo=wcvYZEJJMPd4)
+![Multinomial](https://colab.research.google.com/drive/1L5k4pgTMPa2MmlKBp3bMVV0ruvfL2qjM#scrollTo=V-lSUczsTcWg)
+
+For additional Models, please look under Matthew Lane's branch for jupyter notebook files
+
+
 #### Segment 1: 
 This machine learning model predicts Crime_Against (Person, Society, Property) based on the hour of the day. Future enhancements include month of the year and possibly location. 
 
