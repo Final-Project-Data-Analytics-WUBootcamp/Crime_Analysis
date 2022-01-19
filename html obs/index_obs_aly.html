@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>DevFolio - Developer Portfolio Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free Website Template" name="keywords" />
+    <meta content="Free Website Template" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Libraries -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+      <div class="container-fluid">
+        <img src="img/washUicon.PNG" alt="washu">
+        
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav ml-auto">
+            <a href="#home" class="nav-item nav-link active">Home</a>
+            <a href="#about" class="nav-item nav-link">Question</a>
+            <a href="#service" class="nav-item nav-link">Data Exploration</a>
+            <a href="#review" class="nav-item nav-link">Data Visualizations</a>
+            <a href="#blog" class="nav-item nav-link">Database Design</a>
+            <a href="#experience" class="nav-item nav-link">Workflow & Technologies</a>
+            <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+            <a href="#price" class="nav-item nav-link">Price</a>
+            <a href="#team" class="nav-item nav-link">Team</a>
+            
+            <a href="#contact" class="nav-item nav-link">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Nav Bar End -->
+
+    <!-- Hero Start -->
+    <div class="hero" id="home">
+      <div class="container-fluid">
+        <div
+          class="tableauPlaceholder"
+          id="viz1642422790401"
+          style="position: relative;"
+        >
+          <object class="tableauViz" style="display: none;">
+            <param
+              name="host_url"
+              value="https%3A%2F%2Fpublic.tableau.com%2F"
+            />
+            <param name="embed_code_version" value="3" />
+            <param name="site_root" value="" />
+            <param
+              name="name"
+              value="DRAFT_TEXAS_NIBRS_2017to2020_BJones&#47;Dashboard1"
+            />
+            <param name="tabs" value="no" />
+            <param name="toolbar" value="yes" />
+            <param name="animate_transition" value="yes" />
+            <param name="display_static_image" value="yes" />
+            <param name="display_spinner" value="yes" />
+            <param name="display_overlay" value="yes" />
+            <param name="display_count" value="yes" />
+            <param name="language" value="en-US" />
+            <param name="filter" value="publish=yes" />
+          </object>
+        </div>
+        <script type="text/javascript">
+          var divElement = document.getElementById('viz1642422790401')
+          var vizElement = divElement.getElementsByTagName('object')[0]
+          if (divElement.offsetWidth > 800) {
+            vizElement.style.width = '1300px'
+            vizElement.style.height = '927px'
+          } else if (divElement.offsetWidth > 500) {
+            vizElement.style.width = '1300px'
+            vizElement.style.height = '927px'
+          } else {
+            vizElement.style.width = '100%'
+            vizElement.style.height = '2677px'
+          }
+          var scriptElement = document.createElement('script')
+          scriptElement.src =
+            'https://public.tableau.com/javascripts/api/viz_v1.js'
+          vizElement.parentNode.insertBefore(scriptElement, vizElement)
+        </script>
+      </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- About Start -->
+    <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="about-img">
+              <img src="img/texas_map.jpg" alt="Image" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-content">
+              <div class="section-header text-left">
+                <p>Research Question</p>
+                <h2>
+                  Can we predict the type of of crime that will take place based
+                  on a variety of spatial, temporal and categorical factors?
+                </h2>
+              </div>
+              <div class="about-text">
+                <p>
+                  Dependent Variable: Crimes Against Type (property, society,
+                  person)
+                </p>
+                <p>
+                  Inependent Variables:
+                </p>
+                <p>Incident Month</p>
+                <p>Incident Hour</p>
+                <p>Suburban Area Flag</p>
+                <p>Location Type of Crime</p>
+                <p>Arrestee Age</p>
+                <p>Arrestee Gender</p>
+                <p>Suspect Using</p>
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Service Start -->
+    <div class="service" id="service">
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <p>Data Exploration</p>
+          <h2>Data Exploration and Initial Analysis</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+            <div class="service-item">
+              <div class="service-icon">
+                <img src="img/counties.png" alt="counties" width="141.26" height="150">
+              </div>
+              <div class="service-text">
+                <h3>Visualizing Spatial Trends</h3>
+                <p> Larger population sizes do not always yield more reported arrests </p>
+                <br>
+                <p>The proportion of arrests by crime type, vary slightly based on location; 
+                however, Crime Against Category 3 appears to represent the largest proportion 
+                for most counties.</p>
+                <br>
+                <p>The NIBRS database does not contain data for several Texas counties; 
+                    the lack of coverage is currently unknown.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="service-item">
+              <div class="service-icon">
+                <img src="img/seasons.jpg" alt="seasons" width="141.26" height="150">
+              </div>
+              <div class="service-text">
+                <h3>Visualizing Seasonal and Temporal Trends </h3>
+                <p>There appears to be little variability in seasonal trends, likely due to mild seasonal 
+                    changes in the weather throughout most of Texas</p>
+                    <br> 
+                    <p>Temporally, the Crime Against categories of person and scoiety follow similar trends, peaking in the late night/early morning hours. The property category varies in that it peaks in the late afternoon, evening hours. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="service-item">
+              <div class="service-icon">
+                <img src="img/collin.png" alt="collinicon" width="141.26" height="150">
+              </div>
+              <div class="service-text">
+                <h3>Probable Multicollinearity Between Some Independent Variables </h3>
+                <p>The p value for the suburban area flag 1 and 2 is significantly low (<0.0001)</p>
+                <br>
+                <p>The r squared value for the suburban area flag 1 and 2 is within .02 of each other;
+                     .99 and .97 respectively</p>
+                     <br>
+                <p>Given the statistically significant correlation, we can remove two of the 3 independent
+                     variables for the purposes of our multinomial logistic regression—using the binary 
+                     variable for the suburban area flag will make our machine learning more efficient because 
+                     it will not need to evaluate many discrete, integer values (population and total employees) 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="service-item">
+              <div class="service-icon">
+                <img src="img/corr.png" alt="corr" width="141.26" height="150">
+              </div>
+              <div class="service-text">
+                <h3>Measuring Correlation Between Variables</h3>
+                <p>
+                    Offense Type has a strong, negative correlation with Crime Against Type; 
+                    however, this variable must be removed because it has a hierarchal relationship with 
+                    our dependent variable.</p>
+                    <br>
+                <p>The high correlation between Population, Total Employees (police department) and Suburban Area Flag is visible in our heat map.                    
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Testimonial Start -->
+    <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
+      <div class="container">
+
+        <div class="owl-carousel testimonials-carousel">
+          <div class="testimonial-item">
+            <div class="testimonial-img">
+              <img src="img/Multicollin.jpg" alt="Image"/>
+            </div>
+            <div class="testimonial-text">
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-img">
+              <img src="img/Slide2.JPG" alt="Image" />
+            </div>
+            <div class="testimonial-text">
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-img">
+              <img src="img/Slide3.JPG" alt="Image" />
+            </div>
+            <div class="testimonial-text">
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-img">
+              <img src="img/Heatmap_2.JPG" alt="Image" />
+            </div>
+            <div class="testimonial-text">
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+
+    <!-- Banner Start -->
+    <div class="banner wow zoomIn" data-wow-delay="0.1s">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>AWS's relational database (RDS) service and Storage S3
+          </h2>
+        </div>
+        <div class="container banner-text">
+          <p>Our team hosted the raw and processed data in Amazon RDS. This allows to encrypt the database using keys that are manage through AWS Key Management Service (KMS).
+            The data connects through a cloud database that runs in our local computers. 
+            Also, the team also created a S3 "datacrime-bucket" that stores the unstructured and reference content. This allows scalability, data availability, security, and performance.
+            The selected data was applied for initial data analysis and machine learning modeling. The data sets were published to a 
+            postgres database and queried using SQLAlchemy to run our models. The SQL 
+            queries and joins were conducted to building relationships within the database between 
+            multiple tables.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Portfolio Start 1 -->
+
+    <div class="blog" id="blog">
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <p>Database Design</p>
+          <h2>Create, Read, Update, and Delete (CRUD)</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
+              <div class="blog-img">
+                <img src="img/ETL.png" alt="Blog" />
+              </div>
+              <div class="blog-text">
+                <h2>SQL Schema</h2>
+                <div class="blog-meta">
+                </div>
+                <p>
+                  This is the logic structure of the database where it is grouped the objects of the tables used in the exploratory analysis and the Supervised ML model.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-img">
+                <img src="img/S3.JPG" alt="Blog" />
+              </div>
+              <div class="blog-text">
+                <h2>PySpark AWS S3 Read CSV files</h2>
+                <div class="blog-meta">
+                </div>
+                <p>
+                  The Colab script performs reading operations on AWS S3 using Apache Spark Python API PySpark that allows access to the bucket and read the data into DataFrames. Then, the data is pushed to the postgres environment.
+                </p>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Blog End -->
+
+
+    <!-- Portfolio Start 2 -->
+
+    <div class="blog" id="blog">
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
+              <div class="blog-img">
+                <img src="img/postgres.png" alt="Blog" />
+              </div>
+              <div class="blog-text">
+                <h2>Postgres database and SQL queries</h2>
+                <div class="blog-meta">
+                </div>
+                <p>
+                  Using the database-crime with defined public access, the endpoint was aggregated as server in pgAdmin to execute SQL commands and review data outcomes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-img">
+                <img src="img/SQL.JPG" alt="Blog" />
+              </div>
+              <div class="blog-text">
+                <h2>Create SQL tables</h2>
+                <div class="blog-meta">
+                </div>
+                <p>
+                    The first function of CRUD is creating data. The team created tables and inserted data into them. Inserting is the main part of creating data to be stored within the database. 
+                </p>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Blog End -->
+
+
+
+    <!-- Portfolio End -->
+
+    
+    <!-- Experience Start -->
+    <div class="experience" id="experience">
+      <div class="container">
+        <header
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <p>Workflow</p>
+          <h2>Data Processing and Technologies Used</h2>
+        </header>
+        <div class="timeline">
+          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+            <div class="timeline-text">
+              <div class="timeline-date">Step 1</div>
+              <h2>Data Discovery</h2>
+              <h4>FBI Crime Data Explorer</h4>
+              <img src="img/FBI_logo.PNG" alt="FBI" width="435" height="192.59"
+              >
+            </div>
+          </div>
+          <div
+            class="timeline-item right wow slideInRight"
+            data-wow-delay="0.1s"
+          >
+            <div class="timeline-text">
+              <div class="timeline-date">Step 2</div>
+              <h2>Data Exploration</h2>
+              <h4>Python</h4>
+              <img src="img/python.png" alt="python" width="435" height="192.59"
+              >
+            </div>
+          </div>
+          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+            <div class="timeline-text">
+              <div class="timeline-date">Step 3</div>
+              <h2>Data Analysis and Visualization</h2>
+              <h4>Tableau</h4>
+              <img src="img/tab.png" alt="tableau" width="435" height="192.59"
+              >
+            </div>
+          </div>
+          <div
+            class="timeline-item right wow slideInRight"
+            data-wow-delay="0.1s"
+          >
+            <div class="timeline-text">
+              <div class="timeline-date">Step 4</div>
+              <h2>Data Storage</h2>
+              <h4>Amazon Web Services: RDS & S3</h4>
+              <img src="img/aws.png" alt="aws" width="435" height="192.59"
+              >
+            </div>
+          </div>
+          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+            <div class="timeline-text">
+              <div class="timeline-date">Step 5</div>
+              <h2>Machine Learning</h2>
+              <h4>sci-kit-learn, SQLAlchemy</h4>
+              <img src="img/ml.png" alt="ml" width="435" height="192.59"
+              >
+            </div>
+          </div>
+          <div
+            class="timeline-item right wow slideInRight"
+            data-wow-delay="0.1s"
+          >
+            <div class="timeline-text">
+              <div class="timeline-date">Step 6</div>
+              <h2>Website Design</h2>
+              <h4>HTML, CSS, Javascript</h4>
+              <img src="img/webdes.png" alt="webdes" width="435" height="192.59"
+              >
+            </div>
+          </div>
+          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+            <div class="timeline-text">
+              <div class="timeline-date">Step 7</div>
+              <h2>Publish Website</h2>
+              <h4>Heroku, Flask</h4>
+              <img src="img/heroku.png" alt="heroku" width="435" height="192.59"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Job Experience End -->
+
+    <!-- Price Start -->
+    <div class="price" id="price">
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <p>Pricing Plan</p>
+          <h2>Affordable Price</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="price-item">
+              <div class="price-header">
+                <div class="price-title">
+                  <h2>Basic</h2>
+                </div>
+                <div class="price-prices">
+                  <h2>
+                    <small>$</small>
+                    49
+                    <span>/ mo</span>
+                  </h2>
+                </div>
+              </div>
+              <div class="price-body">
+                <div class="price-description">
+                  <ul>
+                    <li>Bootstrap 4</li>
+                    <li>Font Awesome 5</li>
+                    <li>Responsive Design</li>
+                    <li>Browser Compatibility</li>
+                    <li>Easy To Use</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="price-footer">
+                <div class="price-action">
+                  <a class="btn" href="">Order Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.0s">
+            <div class="price-item featured-item">
+              <div class="price-header">
+                <div class="price-title">
+                  <h2>Standard</h2>
+                </div>
+                <div class="price-prices">
+                  <h2>
+                    <small>$</small>
+                    99
+                    <span>/ mo</span>
+                  </h2>
+                </div>
+              </div>
+              <div class="price-body">
+                <div class="price-description">
+                  <ul>
+                    <li>Bootstrap 4</li>
+                    <li>Font Awesome 5</li>
+                    <li>Responsive Design</li>
+                    <li>Browser Compatibility</li>
+                    <li>Easy To Use</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="price-footer">
+                <div class="price-action">
+                  <a class="btn" href="">Order Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="price-item">
+              <div class="price-header">
+                <div class="price-title">
+                  <h2>Premium</h2>
+                </div>
+                <div class="price-prices">
+                  <h2>
+                    <small>$</small>
+                    149
+                    <span>/ mo</span>
+                  </h2>
+                </div>
+              </div>
+              <div class="price-body">
+                <div class="price-description">
+                  <ul>
+                    <li>Bootstrap 4</li>
+                    <li>Font Awesome 5</li>
+                    <li>Responsive Design</li>
+                    <li>Browser Compatibility</li>
+                    <li>Easy To Use</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="price-footer">
+                <div class="price-action">
+                  <a class="btn" href="">Order Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Price End -->
+
+    <!-- Team Start -->
+    <div class="team" id="team">
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        ></div>
+          <p>Meet the Team</p>
+          <h2>Team Members</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-1.jpg" alt="Image" />
+              </div>
+              <div class="img/aly.jpg">
+                <h2>Alejandra Rivera</h2>
+                <h4>Financial Analyst</h4>
+                <p> Interests include research in Financial and Environmental Economics as well as the application of financial modeling techniques
+                </p>
+                <div class="team-social">
+                  <a class="btn" href="https://twitter.com/cocolirio"><i class="fab fa-twitter"></i></a>
+                  <a class="btn" href="https://www.linkedin.com/in/alejandra-rivera/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/becky.jpeg" alt="Image"/>
+              </div>
+              <div class="team-text">
+                <h2>Becky Jones</h2>
+                <h4>Geospatial Intelligence Analyst</h4>
+                <p> Interests include developing advanced proficiencies in spatiotemporal data analysis
+                </p>
+                <div class="team-social">
+                  <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                  <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                  <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-3.jpg" alt="Image" />
+              </div>
+              <div class="team-text">
+                <h2>Matt Lane</h2>
+                <h4>FP&A Financial Analyst</h4>
+                <p>Interests include creating efficiencies of repetitive deliverables
+                </p>
+                <div class="team-social">
+                  <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                  <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                  <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                  <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Contact Start -->
+    <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
+              <div class="contact-form">
+                <div id="success"></div>
+                <form
+                  name="sentMessage"
+                  id="contactForm"
+                  novalidate="novalidate"
+                >
+                  <div class="control-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required="required"
+                      data-validation-required-message="Please enter your name"
+                    />
+                    <p class="help-block"></p>
+                  </div>
+                  <div class="control-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Your Email"
+                      required="required"
+                      data-validation-required-message="Please enter your email"
+                    />
+                    <p class="help-block"></p>
+                  </div>
+                  <div class="control-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      placeholder="Subject"
+                      required="required"
+                      data-validation-required-message="Please enter a subject"
+                    />
+                    <p class="help-block"></p>
+                  </div>
+                  <div class="control-group">
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      placeholder="Message"
+                      required="required"
+                      data-validation-required-message="Please enter your message"
+                    ></textarea>
+                    <p class="help-block"></p>
+                  </div>
+                  <div>
+                    <button class="btn" type="submit" id="sendMessageButton">
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Blog Start -->
+    <div class="blog" id="blog">
+      <div class="container">
+        <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <p>From Blog</p>
+          <h2>Latest Articles</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
+              <div class="blog-img">
+                <img src="img/blog-1.jpg" alt="Blog" />
+              </div>
+              <div class="blog-text">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <div class="blog-meta">
+                  <p>
+                    <i class="far fa-user"></i>
+                    Admin
+                  </p>
+                  <p>
+                    <i class="far fa-list-alt"></i>
+                    Web Design
+                  </p>
+                  <p>
+                    <i class="far fa-calendar-alt"></i>
+                    01-Jan-2045
+                  </p>
+                  <p>
+                    <i class="far fa-comments"></i>
+                    5
+                  </p>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet elit. Nullam commodo mattis mi.
+                  Nullam eu erat lectus. Proin viverra risus vitae luctus. Proin
+                  ut ante, vitae sapien. Fusce sem ac erat rhoncus, ornare
+                  mattis nisl massa et eros vitae pulvin
+                </p>
+                <a class="btn" href="">
+                  Read More
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
+              <div class="blog-img">
+                <img src="img/blog-2.jpg" alt="Blog" />
+              </div>
+              <div class="blog-text">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <div class="blog-meta">
+                  <p>
+                    <i class="far fa-user"></i>
+                    Admin
+                  </p>
+                  <p>
+                    <i class="far fa-list-alt"></i>
+                    Apps Design
+                  </p>
+                  <p>
+                    <i class="far fa-calendar-alt"></i>
+                    01-Jan-2045
+                  </p>
+                  <p>
+                    <i class="far fa-comments"></i>
+                    10
+                  </p>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet elit. Nullam commodo mattis mi.
+                  Nullam eu erat lectus. Proin viverra risus vitae luctus. Proin
+                  ut ante, vitae sapien. Fusce sem ac erat rhoncus, ornare
+                  mattis nisl massa et eros vitae pulvin
+                </p>
+                <a class="btn" href="">
+                  Read More
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Blog End -->
+
+    <!-- Footer Start -->
+    <div class="footer wow fadeIn" data-wow-delay="0.3s">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="footer-info">
+            <h2>Kate Winslet</h2>
+            <h3>123 Street, New York, USA</h3>
+            <div class="footer-menu">
+              <p>+012 345 67890</p>
+              <p>info@example.com</p>
+            </div>
+            <div class="footer-social">
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-youtube"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="container copyright">
+          <p>
+            &copy;
+            <a href="#">Your Site Name</a>
+            , All Right Reserved | Designed By
+            <a href="https://htmlcodex.com">HTML Codex</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to top button -->
+    <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Pre Loader -->
+    <div id="loader" class="show">
+      <div class="loader"></div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
