@@ -119,7 +119,7 @@ I’ve conducted a Tableau Blend Relationship between the raw arrest data and ad
 
 
 # Segment 3 Dashboard and Website Design
-### Create a dashboard to display your findings.
+### Circle: Create a dashboard to display your findings.
 
 ![Main](https://user-images.githubusercontent.com/88041368/150041629-1b109cf2-3702-45ee-a9fa-d2a935c2cdc3.JPG)
 ![Question](https://user-images.githubusercontent.com/88041368/150041630-b525ba13-fb96-495f-b544-abda3661c7b4.JPG)
