@@ -154,8 +154,6 @@ ORDER BY j.ARR_RACE_ID;
 - #### [Multinomial](https://colab.research.google.com/drive/1L5k4pgTMPa2MmlKBp3bMVV0ruvfL2qjM#scrollTo=V-lSUczsTcWg)
 - #### [Random Over Sampler](https://colab.research.google.com/drive/1pzY-EunwbphRaEXb_PaxAlGJcGqLmpbO?usp=sharing)
 
-- For additional Models, please look under Matthew Lane's branch for jupyter notebook files
-
 ### Machine Learning Overview
 Machine Learning is the field of study that gives computers the capability to learn without being explicitly programmed - Source: Geeks for Geeks
 
