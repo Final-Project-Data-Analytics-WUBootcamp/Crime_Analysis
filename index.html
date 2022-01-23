@@ -75,8 +75,8 @@
                 between 2019 and 2020, according to FBI data. At a county level, violent crime rates are significantly 
                 impacted by the violence taking place in the country’s most dangerous cities. The intent of this 
                 project is to explore crime trends overall at the county level throughout the state of Texas. We 
-                utilized millions of reported offenses published by the FBI’s Crime Data Explorer between 2017 and 2
-                020 to discover what variables may help us predict the likelihood that a particular type of crime may 
+                utilized millions of reported offenses published by the FBI’s Crime Data Explorer between 2017 and
+                2020 to discover what variables may help us predict the likelihood that a particular type of crime may 
                 take place. We considered a variety of factors including arrestee demographics, temporal and seasonality 
                 trends, as well as considered locational characteristics of where an offense occurred. While there is 
                 certainly room for improving our machine learning models and adjusting the variables we initially 
@@ -160,7 +160,7 @@
                         <h4>Independent Variables</h4>
                         <br>
                         <h6>Incident Month, Incident Hour, Suburban Area Flag, Location Type, Arrestee Age,
-                            Arrestee Gender, Suspect Using(under the influence)</h6>
+                            Arrestee Gender, Suspect Using (under the influence)</h6>
                       </div>
                   </div>
               </div>
@@ -229,7 +229,7 @@
                 </div>
                 <p>The Google Colab notebook contains python script that performs reading operations on AWS S3 
                     using Apache Spark Python API PySpark to allow access to the bucket. Once the data is accessed 
-                    in S3 the script reads the data into Panda’s DataFrames. The data is then pushed to the postgres environment.
+                    in S3 the script reads the data into Panda’s Data Frames. The data is then pushed to the postgres environment.
                 </p>
               </div>
             </div>   
@@ -402,7 +402,7 @@
                       <p>An interesting pattern does appear to be emerging in April (4), when the crime trends appear to be 
                         on a steady incline but take an unexpected dip prior to shooting back up in May (5).</p>
                       <br> 
-                      <p>Temporally, the Crime Against categories of person and scoiety follow similar trends, 
+                      <p>Temporally, the Crime Against categories of person and society follow similar trends, 
                           peaking in the late night/early morning hours. The property category varies in that 
                           it peaks in the late afternoon, evening hours. </p>
                   </div>
@@ -492,7 +492,7 @@
                 supervised machine learning models. Supervised machine learning models work well with the
                 data selected because we have a large amount of data to train and test. Testing and
                 Training the data is a big part of supervised machine learning because the computer uses its 
-                learning to generate a general rule that maps the inputs and outputs.The data is broken partially 
+                learning to generate a general rule that maps the inputs and outputs. The data is broken partially 
                 into training to train the model and partially into testing to test the accuracy of the model.
                 Supervised machine learning can be broken down further into regression and classification models. In
                 this analysis we focused on multi-class classification models, which are great at training the model 
@@ -510,7 +510,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="question-img">
-                        <img src="img/ML_results.JPG" alt="texas_map" />
+                        <img src="img/AccuracyScore.png" alt="texas_map" />
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -522,11 +522,11 @@
                                 <div class="question-text">
                                     <h6> Our Machine learning models were trained and tested to predict the type of crime against
                                         (independent variable) going to be committed in Texas from the years 2017-2020 based on time of day, month of
-                                        the year, city type, and attributes of the arrestee(dependent variables).</h6>
+                                        the year, city type, and attributes of the arrestee (dependent variables).</h6>
                                     <br>
                                     <h6> Crime Against is broken into 3 categories: person, property and society, which corresponds with the offense type field.
                                         Having three categories in the independent variable, we start with the standard of trying to beat
-                                        33%. Most of the time, the more categories in the independent variable, the harder it is to have a high accurracy score.
+                                        33%. Most of the time, the more categories in the independent variable, the harder it is to have a high accuracy score.
                                         When looking at if a machine learning model is performing well, it is important to look at the accuracy score, precision, 
                                         recall and f1-score. Below we will dig into different 4 different models and there plus and minuses for this analysis.
                                     </h6>
@@ -554,7 +554,7 @@
                     <div class="results-icon">
                         <img src="img/Machine_Learning_random-forest-algorithm2.png" alt="counties" width="141.26" height="150">
                     </div>
-                    <div class="explore-text">
+                    <div class="results-text">
                         <h3>Random Forest Model</h3>
                         <p> The Random Forest Model builds multiple decision tree
                             algorithms and has each decision tree input its vote.
@@ -562,18 +562,20 @@
                             This is a great model for combining weak learners and
                             turning it into a strong model.</p>
                         <p>The Random Forest Model had the best scores of any of the models.</p>
-                        <p>
-                            <ul>
-                            <li>Accuracy Score = 73%</li>
-                            <li>Precision = 73%</li>
-                            <li>Recall = 73%</li>
-                            <li>F1-score = 73%</li>
-                        </ul>
-                    </p> 
-                    <p>Category 3 had the highest precision score (77%) and highest recall score (82%). This makes 
+                        <br>
+                        <p>Accuracy Score = 73%</p>
+                        <br>
+                        <p>Precision = 73%</p>
+                        <br>
+                        <p>Recall = 73%</p>
+                        <br>
+                        <p>F1-score = 73%</p>
+                        <br>
+                    <p>The society category had the highest precision score (77%) and highest recall score (82%). This makes 
                         logical sense as there this category had the most crimes in total.</p>
+                    <br>
                     <p>With this model one thing to keep in mind is that it is built for numerical data. We have converted all the
-                        categorical data into numeric data but there is still the potential risk of weighting variables to0
+                        categorical data into numeric data but there is still the potential risk of weighting variables too
                         highly because the data is categorical utilizing the random forest model.</p>
                     </div>
                 </div>  
@@ -588,19 +590,23 @@
                         <p>The Multinomial Model is logistic regression model used for multiclassification kind of problems.
                             It is utilized to predict when the target class is more than two.--The Multinomial logistic regression workflow/stages - 
                             Source: dataaspirant.com</p>
-                        <p>
-                            <ul>
-                            <li>Inputs</li>
-                            <li>Linear model</li>
-                            <li>Logits</li>
-                            <li>Softmax Function</li>
-                            <li>Cross Entropy</li>
-                            <li>One-Hot-Encoding </li>
-                        </ul>
-                    </p>
-                    <p>One-Hot Encoding like get_dummies is an important part of supervised machine learning. The function breaks out categorical data into columns
+                            <br>
+                            <p>Inputs</p>
+                            <br>
+                            <p>Linear model</p>
+                            <br>
+                            <p>Logits</p>
+                            <br>
+                            <p>Softmax Function</p>
+                            <br>
+                            <p>Cross Entropy</p>
+                            <br>
+                            <p>One-Hot-Encoding </p>
+                            <br>
+                          <p>One-Hot Encoding like get_dummies is an important part of supervised machine learning. The function breaks out categorical data into columns
                         to help with even weights of the data run through the model.</p>
-                    <p>Multinomial data came up with an accuracy score of 57%. A respectable score when working with multi-class classification models.</p>
+                        <br>
+                        <p>Multinomial data came up with an accuracy score of 57%. A respectable score when working with multi-class classification models.</p>
                     </div>
                 </div>
             </div>
@@ -614,7 +620,7 @@
                         <h3>Random Over Sampler</h3>
                         <p>The random over sampler model helps with class imbalance. It does this by randomly resampling the training data
                             through duplicating samples from the minority class. In the FBI crime data, there is an imbalance in the crimes against classes.
-                            When running this model, it was able to beat probability, but the accuracy score lagged behind at 41% compared to the other models.</p>
+                            When running this model, it was able to beat probability, but the accuracy score lagged behind at 56% compared to the other models.</p>
                     </div>
                 </div>  
             </div>
@@ -626,8 +632,8 @@
                     <div class="results-text">
                         <h3>SMOTE Oversampling</h3>
                         <p>Like the random over sampler model, the smote oversampling model duplicates values from the minority class to balance the distribution.
-                            SMOTE is short for synthetic minority oversampling technique. Also like random over sampling, the SMOTE over sampling model only achieved a
-                            41% accuracy score. In order for this model to perform better, it is best to have a larger disparity in the data distribution.</p>
+                            SMOTE is short for synthetic minority oversampling technique. Also, like random over sampling, the SMOTE over sampling model only achieved a
+                            56% accuracy score. In order for this model to perform better, it is best to have a larger disparity in the data distribution.</p>
                     </div>
                 </div>
             </div>
@@ -804,7 +810,8 @@
               <div class="team-text">
                 <h2>Matt Lane</h2>
                 <h4>FP&A Financial Analyst</h4>
-                <p>Interests include creating efficiencies of repetitive deliverables
+                <p>Interests include creating efficiencies of repetitive deliverables, exploring new data sets to
+                  find useful information, and continuing education through blogs and certificates.
                 </p>
                 <div class="team-social">
                   <a class="btn" href="https://github.com/MatthewLane412"><i class="fab fa-github"></i></a>
