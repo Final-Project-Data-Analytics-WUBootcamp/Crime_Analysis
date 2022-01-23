@@ -40,9 +40,11 @@ AWS: S3, postgres, pgadmin
 
 Tableau, css, javascript, flask ,html, Excel, quickdatabasediagrams.com (ERD), bootstrap
 
-Google Colab, Jupyter Notebook, R, Github, Gitbash
+Google Colab, Jupyter Notebook, Github, Gitbash
 
 IDE: python3; mlenv
+
+Heroku
 
 # Contributions
 
@@ -54,15 +56,9 @@ Development of the initial logical data model for the postgres database
 
 Data processing to prepare for machine learning and data ingest into the postgres database
 
-Overview of Data Processing:
-
-Several data processing steps were required to prepare the raw FBI data files for machine learning and visualizations after conducting the initial logical data model. Raw csv files were read into Jupyter Notebook and multiple years’ worth of data were concatenated together. Columns in the new data frames that would not be used in our analysis were removed as well as any record that was populated with “unknown” or NaN values. We merged data frames containing information about the arrestee, the incident, the offense, suspect using (under the influence), location of incident, and arresting agency to generate a consolidated data frame with all of the variables we wanted to consider for our analysis. Lastly, we converted all categorical fields to numeric values to enable us to run various machine learning models on our data.
-
 ## Segment 2
 
 Data exploration and visualization utilizing Tableau
-
-Additional csv files were generated during the data processing phase specifically for our Tableau Viz—data was aggregated at the county level to visualize our information spatially on the map. The county aggregation allowed us to relate additional county level details such as the median household income, unemployment rate, high school diploma rate, race/ethnicity break out and crime density. Aggregating at the county level enabled us to summarize our processed arrest data to provide an insightful and dynamic visualization.
 
 Creation and publication of the project’s Tableau dashboard
 
@@ -70,7 +66,7 @@ Creation and publication of the project’s Tableau dashboard
 
 Website design including template selection, html and css scripts, and consolidation of team inputs
 
-## Mockup Database
+# Mockup Database
 
 Create table relationships:
 
@@ -84,19 +80,9 @@ The information is hierarchal in nature; however, for the purpose of our initial
 
 ![QuickDBD-export (8)](https://user-images.githubusercontent.com/88041368/147418432-0d55ab60-7e09-433b-aae0-179cb7d86d00.png)
 
-## Initial Data Exploration for Subset of Texas Crime: Assaults Only
+# Initial Data Exploration
 
-![TX_Assaults_County_Map](https://user-images.githubusercontent.com/88041368/147013145-ce9da898-8f15-482c-a270-4a20cbcb8bde.jpg)
-![TX_Assaults_Victim_Demographics](https://user-images.githubusercontent.com/88041368/147013143-f5336f15-6273-451e-9f40-4fa6e662aaa4.jpg)
-![TX_Assaults_ArresteeVsVictim_Age](https://user-images.githubusercontent.com/88041368/147013144-424b52c9-2398-4dae-9dde-2818a6a20dd3.jpg)
-
-# Segment 2 Deliverables
-
-After some data visualization attempts with our previous iterations of the dataset the following was identified:
-
-•	Our data was incredibly skewed towards Crimes Against Persons, more specifically assaults, because we merged victim data information. When we did this, and removed NaN records, we removed all arrests where victim information was not available. In the Crimes Against category, there is often times not a victim for crime against property and/or society.
-
-o	By correcting this error, the majority of our arrests are actually for crimes against society
+Initially, we planned consider victim related information into our analysis; however, after some data visualizations it became clear our data was highly skewed towards crimes against persons, especially assaults. I realized that by including victim information and removing all the data records where victim values were NaN in the data processing phase I was inadvertently removing a majority of our arrests. Often times crimes against society and/or property do not have an identified victim. In correcting this error, a majority of our arrests data now falls within the crimes against society category vs persons.
 
 ## With Victim Information Joined to the Data
 *1=Person, 2=Property, 3=Society*
@@ -105,9 +91,15 @@ o	By correcting this error, the majority of our arrests are actually for crimes 
 *1=Person, 2=Property, 3=Society*
 ![Removing_Victim_Info](https://user-images.githubusercontent.com/88041368/148650853-e4a7a429-8b93-4e37-8e39-e7ab2e1cb7fc.png)
 
+# Data Processing Steps
 
-•	Our independent variables are mostly all categorical which is problematic for many machine learning models; linear regression is not an option. After some initial research, the best way forward may be to consider a logistic regression model. Specifically, a Multinomial Logistic Regression Model should be explored.
-https://machinelearningmastery.com/multinomial-logistic-regression-with-python/
+Several data processing steps were required to prepare the raw FBI data files for machine learning and visualizations after conducting the initial logical data model. Raw csv files were read into Jupyter Notebook and multiple years’ worth of data were concatenated together. Columns in the new data frames that would not be used in our analysis were removed as well as any record that was populated with “unknown” or NaN values. We merged data frames containing information about the arrestee, the incident, the offense, suspect using (under the influence), location of incident, and arresting agency to generate a consolidated data frame with all of the variables we wanted to consider for our analysis. Lastly, we converted all categorical fields to numeric values to enable us to run various machine learning models on our data.
+
+*The notebook and output data files are available in the Data_Processing folders*
+
+# Data Visulaization with Tableau Dashboard
+
+Additional csv files were generated during the data processing phase specifically for our Tableau Viz—data was aggregated at the county level to visualize our information spatially on the map. The county aggregation allowed us to relate additional county level details such as the median household income, unemployment rate, high school diploma rate, race/ethnicity break out and crime density. Aggregating at the county level enabled us to summarize our processed arrest data to provide an insightful and dynamic visualization.
 
 ## Visualizations Conducted in Tableau to Further Explore our Data
 
