@@ -109,6 +109,9 @@ Larger population sizes do not always yield more reported arrests
 The proportion of arrests by crime type vary slightly based on the location; however, crime against society represents the largest proportion of arrests made in our sample data.
 
 The NIBRS database where we obtained our data does not contain arrest related information for all of the counties in Texas; the lack of comprehensive coverage is unknown at this time.
+![crimemap](https://user-images.githubusercontent.com/88041368/150701466-94e44849-4a25-484a-8ac3-1243ea8f87cd.PNG)
+![loc](https://user-images.githubusercontent.com/88041368/150701299-9167a1c5-9914-4e9f-bc43-5ce45ad81389.jpg)
+*1=Person, 2=Property, 3=Society*
 
 ### Seasonal and Temporal Trends
 
@@ -117,6 +120,10 @@ All three crime type categories follow a similar seasonal trend with fairly litt
 An interesting pattern does appear to be emerging in April (4), when the crime trends appear to be on a steady incline but take an unexpected dip prior to shooting back up in May (5).
 
 Temporally, the Crime Against categories of person and society follow similar trends, peaking in the late night/early morning hours. The property category varies in that it peaks in the late afternoon, evening hours.
+![monthly](https://user-images.githubusercontent.com/88041368/150701293-89273f15-61e7-475b-ab59-eb7105ca35cf.jpg)
+*1=Person, 2=Property, 3=Society*
+![hourly](https://user-images.githubusercontent.com/88041368/150701301-61b31924-3650-4cb9-99c7-cdbf26f68898.jpg)
+*1=Person, 2=Property, 3=Society*
 
 ### Probable Multicollinearity Between Some Independent Variables
 
@@ -125,45 +132,21 @@ From the coefficient heatmap we can see that there is likely a high correlation 
 ### Measuring Additional Correlation Between Variables
 
 Offense Type has a strong, negative correlation with Crime Against Type; however, this variable must be removed because it has a hierarchal relationship with our dependent variable.
+![Heatmap_2 (1)](https://user-images.githubusercontent.com/88041368/150701298-bee29132-7d7d-471a-9d3b-801708aec98a.jpg)
 
 # Data Visulaization with Tableau Dashboard
 
 Additional csv files were generated during the data processing phase specifically for our Tableau Viz—data was aggregated at the county level to visualize our information spatially on the map. The county aggregation allowed us to relate additional county level details such as the median household income, unemployment rate, high school diploma rate, race/ethnicity break out and crime density. Aggregating at the county level enabled us to summarize our processed arrest data to provide an insightful and dynamic visualization.
 
-## Visualizations Conducted in Tableau to Further Explore our Data
-
-![Slide1](https://user-images.githubusercontent.com/88041368/149043761-748acf72-cf89-4864-8e23-49e83d34ee42.JPG)
-
-![Slide2](https://user-images.githubusercontent.com/88041368/149043762-ed817023-5630-4361-be97-795dc5febc00.JPG)
-
-![Slide3](https://user-images.githubusercontent.com/88041368/149043763-f4ff8b79-0179-4f36-8d10-9a9b102f7ee1.JPG)
-
-![Slide4](https://user-images.githubusercontent.com/88041368/149043759-3a1c7ffb-d486-40a2-b714-ee37f6e5cb00.JPG)
-
-## Tableau dashboard initial draft is posted on Tableau Public so we can begin to discuss necessary changes and design our website's html around the embedded visualization.
-
-### This dashboard is dynamic; when you click on a county, all the other data visualizations filter. The dashboard can be viewed here: https://public.tableau.com/app/profile/becky2270/viz/DRAFT_TEXAS_NIBRS_2017to2020_BJones/Dashboard1?publish=yes
-
 I’ve conducted a Tableau Blend Relationship between the raw arrest data and additional sociodemographic data I was able to find on Texas counties. The additional sociodemographic data was produced by the CDC’s Agency for Toxic Substances and Disease Registry for the annual Social Vulnerability Study. SVI provides specific socially and spatially relevant information to help public health officials and local planners better prepare communities to respond to emergency events such as severe weather, floods, disease outbreaks, or chemical exposure. This data also allowed me to generate additional data fields specific to our crime data.
 
-•	Arrest Rate per 100 Residents (Total Arrests per County/Total Population per County * 100)
+## Visualizations Conducted in Tableau to Further Explore our Data
+![tabdash](https://user-images.githubusercontent.com/88041368/150701769-2b212d69-4756-4b93-b88b-c640866c44e8.PNG)
+### This dashboard is dynamic; when you click on a county, all the other data visualizations filter. The dashboard can be viewed here: https://public.tableau.com/app/profile/becky2270/viz/DRAFT_TEXAS_NIBRS_2017to2020_BJones/Dashboard1?publish=yes
 
-•	Estimated Arrests per Officer (Total Arrests per County/Total Officers per County)
+# Dashboard and Website Design
 
-![TEXAS_NIBRS_2017to2020](https://user-images.githubusercontent.com/88041368/149702817-edf4556c-0ec3-44a1-9eb7-0eee3d4441fd.jpg)
-
-
-
-# Segment 3 Dashboard and Website Design
-### Circle: Create a dashboard to display your findings.
-
-![Main](https://user-images.githubusercontent.com/88041368/150041629-1b109cf2-3702-45ee-a9fa-d2a935c2cdc3.JPG)
-![Question](https://user-images.githubusercontent.com/88041368/150041630-b525ba13-fb96-495f-b544-abda3661c7b4.JPG)
-![DataExploration](https://user-images.githubusercontent.com/88041368/150041625-67518f2d-7d4a-485c-bc34-8081f56ca8cd.JPG)
-![DataViz](https://user-images.githubusercontent.com/88041368/150041627-1576d19d-9aec-40d4-a288-6074d1487366.JPG)
-![DatabaseDesign](https://user-images.githubusercontent.com/88041368/150041623-abf0179a-afdf-482f-b7f2-423078c46c2d.JPG)
-![Workflow](https://user-images.githubusercontent.com/88041368/150041620-b88bdb96-13c8-46a4-a54f-76d06cefca71.JPG)
-![Team](https://user-images.githubusercontent.com/88041368/150041619-59b58db2-1f8b-4580-a75f-4bfa04dd6158.JPG)
+The published website can be accessed here: https://crime-dashboard-analysis.herokuapp.com/
 
 ### HTML template was modified to meet the needs of this project; original download source and credits below:
 Template Name    : DevFolio - Developer Portfolio Template
