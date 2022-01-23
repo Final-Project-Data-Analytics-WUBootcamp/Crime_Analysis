@@ -44,21 +44,31 @@ Google Colab, Jupyter Notebook, R, Github, Gitbash
 
 IDE: python3; mlenv
 
-## First Segment Goal
+# Contributions
 
-Sketch It Out: Decide on your overall project, select your question, and build a simple model. You'll connect the model to a fabricated database, using comma-separated values (CSV) or JavaScript Object Notation (JSON) files, to prototype your idea.
+## Segment 1
 
-## First Segment Role
+Initial project design and data availability research
 
-Circle: The member in the circle role will create a mockup of a database with a set of sample data, or even fabricated data. This will ensure the database will work seamlessly with the rest of the project.
+Development of the initial logical data model for the postgres database
 
-## Preprocessing Sample Data
+Data processing to prepare for machine learning and data ingest into the postgres database
 
-Sample data selected: Texas 2017-2020
+Overview of Data Processing:
 
-The initial data processing of the sample data was conducted in a Jupyter Notebook (see: TX_2020.ipynb) using python to execute our ERD model. Our ERD model determined the required csv’s, the relevant columns and the relationships for merging the individual data frames together. We opted to merge the dataframes using python rather than SQL because the creation of our actual database on AWS wasn’t completed at the time. We intend to use SQL to combine the 4 csv files (one for each year) into a single table as part of our deliverable for Segment 2. Aly has since populated our S3 bucket with the output csv files generated from the python code as well as all the additional lookup tables included in the bulk download from the FBI website. We intend to create future table joins, post machine learning, to ensure any remaining coded values are properly related to their respective, tables.
+Several data processing steps were required to prepare the raw FBI data files for machine learning and visualizations after conducting the initial logical data model. Raw csv files were read into Jupyter Notebook and multiple years’ worth of data were concatenated together. Columns in the new data frames that would not be used in our analysis were removed as well as any record that was populated with “unknown” or NaN values. We merged data frames containing information about the arrestee, the incident, the offense, suspect using (under the influence), location of incident, and arresting agency to generate a consolidated data frame with all of the variables we wanted to consider for our analysis. Lastly, we converted all categorical fields to numeric values to enable us to run various machine learning models on our data.
 
-python: Read in csv files of interest, remove extra columns in each df that are not necessary for data analysis, remove records that have NaN values from each df, merge df’s to flatten the hierarchal data structure to allow for initial data exploration
+## Segment 2
+
+Data exploration and visualization utilizing Tableau
+
+Additional csv files were generated during the data processing phase specifically for our Tableau Viz—data was aggregated at the county level to visualize our information spatially on the map. The county aggregation allowed us to relate additional county level details such as the median household income, unemployment rate, high school diploma rate, race/ethnicity break out and crime density. Aggregating at the county level enabled us to summarize our processed arrest data to provide an insightful and dynamic visualization.
+
+Creation and publication of the project’s Tableau dashboard
+
+## Segment 3
+
+Website design including template selection, html and css scripts, and consolidation of team inputs
 
 ## Mockup Database
 
