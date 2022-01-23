@@ -1,12 +1,12 @@
-# Federal Bureau of Investigation's Crime Data Explorer
+# Project Overview
+
+It has been widely reported that violent crime has been on the rise nationwide; a 5% increase between 2019 and 2020, according to FBI data. At a county level, violent crime rates are significantly impacted by the violence taking place in the country’s most dangerous cities. The intent of this project is to explore crime trends overall at the county level throughout the state of Texas. We utilized millions of reported offenses published by the FBI’s Crime Data Explorer between 2017 and 2020 to discover what variables may help us predict the likelihood that a particular type of crime may take place. We considered a variety of factors including arrestee demographics, temporal and seasonality trends, as well as considered locational characteristics of where an offense occurred. While there is certainly room for improving our machine learning models and adjusting the variables we initially considered, we have been able to gain new insights regarding overall crime trends in Texas.
+
+# Data Source
+
+## Federal Bureau of Investigation's Crime Data Explorer
 
 The FBI's Crime Data Explorer (CDE) aims to provide transparency, create easier access, and expand awareness of criminal, and noncriminal, law enforcement data sharing; improve accountability for law enforcement; and provide a foundation to help shape public policy with the result of a safer nation. Use the CDE to discover available data through visualizations, download data in .csv format, and other large data files.
-
-## Working Question:
-
-### Can we predict the type of of crime that will take place based on a variety of spatial, temporal and categorical factors?
-
-*Type of crime will be a classified as crime against persons, society or property*
 
 ## Data Selection
 
@@ -22,12 +22,17 @@ Source URL: https://crime-data-explorer.app.cloud.gov/pages/downloads
 
 Becky pitched the initial idea to research available crime data and came across the FBI’s data explorer. The available datasets are incredibly robust and the schemas are both well documented and consistent across multiple years and states. Utilizing data like this allowed us to consider many different questions as well as adjust the scope of our project after meeting together as a team to discuss the direction we wanted to take our project.
 
-
 ## Scope
 
 For the purposes of our analysis we will be exploring the relationship between time of day and types of crimes being committed that have resulted in an arrest. This data does not represent all reported crimes, only those where an arrest took place. The geographical extent of our analysis will focus on the state of Texas and we will utilize data published from 2017-2020. Prior to 2017 a slightly different schema and file naming system was used; after reviewing the amount of data 4 years provided, it was determine the additional steps of schema and file mapping was not necessary for our purposes.
 
-## Technologies
+# Working Question:
+
+### Can we predict the type of of crime that will take place based on a variety of spatial, temporal and categorical factors?
+
+*Type of crime will be a classified as crime against persons, society or property*
+
+# Technologies
 
 python: pandas, matplotlib, scikitlearn, numpy, pyspark
 
