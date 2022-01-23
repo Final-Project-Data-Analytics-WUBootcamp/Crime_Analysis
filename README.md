@@ -97,6 +97,35 @@ Several data processing steps were required to prepare the raw FBI data files fo
 
 *The notebook and output data files are available in the Data_Processing folders*
 
+![rawdata](https://user-images.githubusercontent.com/88041368/150701101-03772e77-5c7a-41e1-b52b-fc3d7acef50e.jpg)
+![processeddata](https://user-images.githubusercontent.com/88041368/150701097-6effda53-079a-44aa-9c56-2f1179a7d4d7.jpg)
+
+# Further Data Exploration
+
+### Spatial Trends
+
+Larger population sizes do not always yield more reported arrests
+
+The proportion of arrests by crime type vary slightly based on the location; however, crime against society represents the largest proportion of arrests made in our sample data.
+
+The NIBRS database where we obtained our data does not contain arrest related information for all of the counties in Texas; the lack of comprehensive coverage is unknown at this time.
+
+### Seasonal and Temporal Trends
+
+All three crime type categories follow a similar seasonal trend with fairly little variability from month to month.
+
+An interesting pattern does appear to be emerging in April (4), when the crime trends appear to be on a steady incline but take an unexpected dip prior to shooting back up in May (5).
+
+Temporally, the Crime Against categories of person and society follow similar trends, peaking in the late night/early morning hours. The property category varies in that it peaks in the late afternoon, evening hours.
+
+### Probable Multicollinearity Between Some Independent Variables
+
+From the coefficient heatmap we can see that there is likely a high correlation between the suburban area, population, and total police department employees’ independent variables. This makes sense given that more people live in urban areas and larger populations require larger police departments. We can remove two of these three variables for the purpose of our analyses.
+
+### Measuring Additional Correlation Between Variables
+
+Offense Type has a strong, negative correlation with Crime Against Type; however, this variable must be removed because it has a hierarchal relationship with our dependent variable.
+
 # Data Visulaization with Tableau Dashboard
 
 Additional csv files were generated during the data processing phase specifically for our Tableau Viz—data was aggregated at the county level to visualize our information spatially on the map. The county aggregation allowed us to relate additional county level details such as the median household income, unemployment rate, high school diploma rate, race/ethnicity break out and crime density. Aggregating at the county level enabled us to summarize our processed arrest data to provide an insightful and dynamic visualization.
