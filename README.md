@@ -2,13 +2,17 @@
 
 "The FBI's Crime Data Explorer (CDE) aims to provide transparency, create easier access, and expand awareness of criminal, and noncriminal, law enforcement data sharing; improve accountability for law enforcement; and provide a foundation to help shape public policy with the result of a safer nation. Use the CDE to discover available data through visualizations, download data in .csv format, and other large data files."
 
+## Project Overview
+
+It has been widely reported that violent crime has been on the rise nationwide; a 5% increase between 2019 and 2020, according to FBI data. At a county level, violent crime rates are significantly impacted by the violence taking place in the country’s most dangerous cities. The intent of this project is to explore crime trends overall at the county level throughout the state of Texas. We utilized millions of reported offenses published by the FBI’s Crime Data Explorer between 2017 and 2020 to discover what variables may help us predict the likelihood that a particular type of crime may take place. We considered a variety of factors including arrestee demographics, temporal and seasonality trends, as well as considered locational characteristics of where an offense occurred. While there is certainly room for improving our machine learning models and adjusting the variables we initially considered, we have been able to gain new insights regarding overall crime trends in Texas.
+
 ## Working Question:
 
 ### Can we predict  the type of of crime that will take place based on a variety of spatial, temporal and categorical factors?
 
 *Type of crime will be a classified as crime against persons, society or property*
 
-## Google Slides
+## Google Slides - Crime Against Deck -> Final Presentation
 [Google Slides](https://docs.google.com/presentation/d/1QLSF3Q7AoVnUGJ1b3vpzSRCFdUsbW5BrnfG1aPIo6k0/edit#slide=id.g10d9a689256_0_80)
 
 
@@ -288,6 +292,7 @@ The Random Forest Model ended up being our model choice after going through tria
 ## HEROKU  :pushpin:
 
 ### The **main branch** of the Crime_Analysis repo has been connected to ```Heroku Dashboard```. 
+Open heroku-app!
 It is named [crime-dashboard-analysis](https://dashboard.heroku.com/apps/crime-dashboard-analysis). It is linked to this Git repo.
 
 ________________________________________________________________________________________________________________________________________________________________
