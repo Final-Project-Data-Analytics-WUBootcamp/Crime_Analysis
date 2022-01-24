@@ -253,7 +253,7 @@ The Random Forest had the best results of the machine learning models. See below
 
 ![SupervisedMachineLearning](/Images/AccuracyScore.PNG)
 
-Some of the preprocessing to prep the model for machine learning includes:
+#### Some of the preprocessing to prep the model for machine learning includes:
 - Importing Libraries
 - Connecting to RDS database and bring in tables
 - Checking data types
@@ -263,10 +263,23 @@ Some of the preprocessing to prep the model for machine learning includes:
 - Create a correlation matrix to find any columns that can be dropped
 - Drop columns interfering with the accuracy score
 
+#### Feature Engineering
+The feature engineering was a process of trial and error. Figuring out which independent variables helped increase the accuracy score, precision score, and recall score the most with each machine learning model. Here are some of the varables that went into picking the feature selection:
+- Exluding victim informtion as it was blank in many cases where the crime against was property. 
+- Using a correlation function to exclude variables that we are able to predict one with the other. Selecting one of the variables helps speed up the machine learning model. 
+- Bucketing arrest age variable to lower the number of unique instances. Grouping data can help increase accuracy scores.  
+
 If more time was available I would:
 - Investigate bringing in new data sets to join in on the table to help increase the accuracy score. 
 - Test additional machine learning algorithms that are great with multi-class classification categorical data types. 
 - Run the machine learning model with a different dependent variable such as the “suspect using id”
+
+#### Splitting data into training and testing data sets
+ - This data was split into 75% training and 25% testing
+ - The random state was 1 meaning we would produce the same result each time the model is run.
+ - Stratify was set to y meaning it will assure the same proportions of each dependent variables are in the training and testing data sets. 
+
+#### Model choice, including limitations and benefits
 
 
 ## HEROKU  :pushpin:
