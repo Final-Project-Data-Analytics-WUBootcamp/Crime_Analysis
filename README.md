@@ -280,6 +280,10 @@ If more time was available I would:
  - Stratify was set to y meaning it will assure the same proportions of each dependent variables are in the training and testing data sets. 
 
 #### Model choice, including limitations and benefits
+The Random Forest Model ended up being our model choice after going through trial and error with multiple supervised machine learning models. Supervised machine learning models were pinpointed because we had a large amound of clean data to train and test, perfect for supervised machine learning models. Othe supervised machine learning models tested were Multinomial, Random Over Sampler, SMOTE oversampler, and Neural Networks. 
+- The Random Forest model had the best accuracy score, precision score, and recall score. 
+- Some benefits include: powerful, accurate, works well with non-linear data, Runs efficiently on a large dataset, flexable to both classification and regressoin problems, works well with categorical and continuous values. 
+- Some limitations include: Prone to overfitting and poor interpretability. 
 
 
 ## HEROKU  :pushpin:
