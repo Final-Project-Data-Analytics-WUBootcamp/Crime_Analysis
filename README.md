@@ -228,7 +228,7 @@ ________________________________________________________________________________
 #### [Random Forest Model](https://colab.research.google.com/drive/1ezdCrXePPz7lmU7CXnlZGEi7A3TekzIT#scrollTo=lnpzkmNhWORW)
 
 ### Google Colab Links to Other Models
-- #### [SVM Model](https://colab.research.google.com/drive/1xrVmeHoE1cm7Y5gHZlM4VNrNR9gCYp4e#scrollTo=wnmIJh-53qV0)
+- #### [SVM Model](https://colab.research.google.com/drive/1xrVmeHoE1cm7Y5gHZlM4VNrNR9gCYp4e#scrollTo=wnmIJh-53qV0) - This model was unable to process with the processing power of the free version of google colab. Though, in the future, it would be a great model to try with more processing power. 
 - #### [Neural Network](https://colab.research.google.com/drive/1Wjht48glkqfpHDe8giguAvLEaeCmaE91#scrollTo=wuxINuJNgfRK)
 - #### [Neural Network Random Foreset Model](https://colab.research.google.com/drive/1FpEZQJmgGxJiR9xBvtBUKDpNEJo-Il10#scrollTo=wcvYZEJJMPd4)
 - #### [Multinomial](https://colab.research.google.com/drive/1L5k4pgTMPa2MmlKBp3bMVV0ruvfL2qjM#scrollTo=V-lSUczsTcWg)
@@ -264,12 +264,12 @@ The Random Forest had the best results of the machine learning models. See below
 - Drop columns interfering with the accuracy score
 
 #### Feature Engineering
-The feature engineering was a process of trial and error. Figuring out which independent variables helped increase the accuracy score, precision score, and recall score the most with each machine learning model. Here are some of the varables that went into picking the feature selection:
-- Exluding victim informtion as it was blank in many cases where the crime against was property. 
-- Using a correlation function to exclude variables that we are able to predict one with the other. Selecting one of the variables helps speed up the machine learning model. 
+The feature engineering was a process of trial and error. Figuring out which independent variables helped increase the accuracy score, precision score, and recall score the most with each machine learning model. Here are some of the variables that went into picking the feature selection:
+- Excluding victim information as it was blank in many cases where the crime against was property. 
+- Using a correlation function to exclude variables that we can predict one with the other. Selecting one of the variables helps speed up the machine learning model. 
 - Bucketing arrest age variable to lower the number of unique instances. Grouping data can help increase accuracy scores.  
 
-If more time was available I would:
+#### If more time was available:
 - Investigate bringing in new data sets to join in on the table to help increase the accuracy score. 
 - Test additional machine learning algorithms that are great with multi-class classification categorical data types. 
 - Run the machine learning model with a different dependent variable such as the “suspect using id”
@@ -280,11 +280,10 @@ If more time was available I would:
  - Stratify was set to y meaning it will assure the same proportions of each dependent variables are in the training and testing data sets. 
 
 #### Model choice, including limitations and benefits
-The Random Forest Model ended up being our model choice after going through trial and error with multiple supervised machine learning models. Supervised machine learning models were pinpointed because we had a large amound of clean data to train and test, perfect for supervised machine learning models. Othe supervised machine learning models tested were Multinomial, Random Over Sampler, SMOTE oversampler, and Neural Networks. 
+The Random Forest Model ended up being our model choice after going through trial and error with multiple supervised machine learning models. Supervised machine learning models were pinpointed because we had a large amount of clean data to train and test, perfect for supervised machine learning models. Other supervised machine learning models tested were Multinomial, Random Over Sampler, SMOTE Over Sampler, and Neural Networks. 
 - The Random Forest model had the best accuracy score, precision score, and recall score. 
-- Some benefits include: powerful, accurate, works well with non-linear data, Runs efficiently on a large dataset, flexable to both classification and regressoin problems, works well with categorical and continuous values. 
-- Some limitations include: Prone to overfitting and poor interpretability. 
-
+- Some benefits include powerful, accurate, works well with non-linear data, runs efficiently on a large dataset, flexible to both classification and regression problems, works well with categorical and continuous values. 
+- Some limitations include prone to overfitting and poor interpretability.
 
 ## HEROKU  :pushpin:
 
