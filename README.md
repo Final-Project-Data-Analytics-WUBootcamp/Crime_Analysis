@@ -141,18 +141,100 @@ ORDER BY j.ARR_RACE_ID;
 
 ![Join_Crime_tables](https://github.com/Final-Project-Data-Analytics-WUBootcamp/Crime_Analysis/blob/Alejandra/JOIN_TABLES.png#gh-dark-mode-only)
 
+_____________________________________________________________________________________________________________________________________________________________________________
+# Initial Data Exploration
 
+Initially, we planned consider victim related information into our analysis; however, after some data visualizations it became clear our data was highly skewed towards crimes against persons, especially assaults. I realized that by including victim information and removing all the data records where victim values were NaN in the data processing phase I was inadvertently removing a majority of our arrests. Often times crimes against society and/or property do not have an identified victim. In correcting this error, a majority of our arrests data now falls within the crimes against society category vs persons.
+
+## With Victim Information Joined to the Data
+*1=Person, 2=Property, 3=Society*
+![Adding_Victim_Info](https://user-images.githubusercontent.com/88041368/148650854-4eed1198-893e-499b-8476-e2c393654764.png)
+## Without Victim Information Joined to the Data
+*1=Person, 2=Property, 3=Society*
+![Removing_Victim_Info](https://user-images.githubusercontent.com/88041368/148650853-e4a7a429-8b93-4e37-8e39-e7ab2e1cb7fc.png)
+
+# Data Processing Steps
+
+Several data processing steps were required to prepare the raw FBI data files for machine learning and visualizations after conducting the initial logical data model. Raw csv files were read into Jupyter Notebook and multiple years’ worth of data were concatenated together. Columns in the new data frames that would not be used in our analysis were removed as well as any record that was populated with “unknown” or NaN values. We merged data frames containing information about the arrestee, the incident, the offense, suspect using (under the influence), location of incident, and arresting agency to generate a consolidated data frame with all of the variables we wanted to consider for our analysis. Lastly, we converted all categorical fields to numeric values to enable us to run various machine learning models on our data.
+
+*The notebook and output data files are available in the Data_Processing folders*
+
+![rawdata](https://user-images.githubusercontent.com/88041368/150701101-03772e77-5c7a-41e1-b52b-fc3d7acef50e.jpg)
+![processeddata](https://user-images.githubusercontent.com/88041368/150701097-6effda53-079a-44aa-9c56-2f1179a7d4d7.jpg)
+
+# Further Data Exploration
+
+### Spatial Trends
+
+Larger population sizes do not always yield more reported arrests
+
+The proportion of arrests by crime type vary slightly based on the location; however, crime against society represents the largest proportion of arrests made in our sample data.
+
+The NIBRS database where we obtained our data does not contain arrest related information for all of the counties in Texas; the lack of comprehensive coverage is unknown at this time.
+![crimemap](https://user-images.githubusercontent.com/88041368/150701466-94e44849-4a25-484a-8ac3-1243ea8f87cd.PNG)
+![loc](https://user-images.githubusercontent.com/88041368/150701299-9167a1c5-9914-4e9f-bc43-5ce45ad81389.jpg)
+*1=Person, 2=Property, 3=Society*
+
+### Seasonal and Temporal Trends
+
+All three crime type categories follow a similar seasonal trend with fairly little variability from month to month.
+
+An interesting pattern does appear to be emerging in April (4), when the crime trends appear to be on a steady incline but take an unexpected dip prior to shooting back up in May (5).
+
+Temporally, the Crime Against categories of person and society follow similar trends, peaking in the late night/early morning hours. The property category varies in that it peaks in the late afternoon, evening hours.
+![monthly](https://user-images.githubusercontent.com/88041368/150701293-89273f15-61e7-475b-ab59-eb7105ca35cf.jpg)
+*1=Person, 2=Property, 3=Society*
+![hourly](https://user-images.githubusercontent.com/88041368/150701301-61b31924-3650-4cb9-99c7-cdbf26f68898.jpg)
+*1=Person, 2=Property, 3=Society*
+
+### Probable Multicollinearity Between Some Independent Variables
+
+From the coefficient heatmap we can see that there is likely a high correlation between the suburban area, population, and total police department employees’ independent variables. This makes sense given that more people live in urban areas and larger populations require larger police departments. We can remove two of these three variables for the purpose of our analyses.
+
+### Measuring Additional Correlation Between Variables
+
+Offense Type has a strong, negative correlation with Crime Against Type; however, this variable must be removed because it has a hierarchal relationship with our dependent variable.
+![Heatmap_2 (1)](https://user-images.githubusercontent.com/88041368/150701298-bee29132-7d7d-471a-9d3b-801708aec98a.jpg)
+
+# Data Visulaization with Tableau Dashboard
+
+Additional csv files were generated during the data processing phase specifically for our Tableau Viz—data was aggregated at the county level to visualize our information spatially on the map. The county aggregation allowed us to relate additional county level details such as the median household income, unemployment rate, high school diploma rate, race/ethnicity break out and crime density. Aggregating at the county level enabled us to summarize our processed arrest data to provide an insightful and dynamic visualization.
+
+I’ve conducted a Tableau Blend Relationship between the raw arrest data and additional sociodemographic data I was able to find on Texas counties. The additional sociodemographic data was produced by the CDC’s Agency for Toxic Substances and Disease Registry for the annual Social Vulnerability Study. SVI provides specific socially and spatially relevant information to help public health officials and local planners better prepare communities to respond to emergency events such as severe weather, floods, disease outbreaks, or chemical exposure. This data also allowed me to generate additional data fields specific to our crime data.
+
+## Visualizations Conducted in Tableau to Further Explore our Data
+![tabdash](https://user-images.githubusercontent.com/88041368/150701769-2b212d69-4756-4b93-b88b-c640866c44e8.PNG)
+### This dashboard is dynamic; when you click on a county, all the other data visualizations filter. The dashboard can be viewed here: https://public.tableau.com/app/profile/becky2270/viz/DRAFT_TEXAS_NIBRS_2017to2020_BJones/Dashboard1?publish=yes
+
+# Dashboard and Website Design
+
+The published website can be accessed here: https://crime-dashboard-analysis.herokuapp.com/
+
+### HTML template was modified to meet the needs of this project; original download source and credits below:
+Template Name    : DevFolio - Developer Portfolio Template
+
+Template Link    : https://htmlcodex.com/developer-portfolio-template
+
+Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
+
+Template Author  : HTML Codex
+Author Website   : https://htmlcodex.com
+
+About HTML Codex : HTML Codex is one of the top creators and publishers of Free HTML templates, HTML landing pages, HTML email templates and HTML snippets in the world. Read more at ( https://htmlcodex.com/about-us )
+_____________________________________________________________________________________________________________________________________________________________________________
 ## Machine Learning
 
 ### Google Colab Link Main Model
 #### [Random Forest Model](https://colab.research.google.com/drive/1ezdCrXePPz7lmU7CXnlZGEi7A3TekzIT#scrollTo=lnpzkmNhWORW)
 
 ### Google Colab Links to Other Models
-- #### [SVM Model](https://colab.research.google.com/drive/1xrVmeHoE1cm7Y5gHZlM4VNrNR9gCYp4e#scrollTo=wnmIJh-53qV0)
+- #### [SVM Model](https://colab.research.google.com/drive/1xrVmeHoE1cm7Y5gHZlM4VNrNR9gCYp4e#scrollTo=wnmIJh-53qV0) - This model was unable to process with the processing power of the free version of google colab. Though, in the future, it would be a great model to try with more processing power. 
 - #### [Neural Network](https://colab.research.google.com/drive/1Wjht48glkqfpHDe8giguAvLEaeCmaE91#scrollTo=wuxINuJNgfRK)
 - #### [Neural Network Random Foreset Model](https://colab.research.google.com/drive/1FpEZQJmgGxJiR9xBvtBUKDpNEJo-Il10#scrollTo=wcvYZEJJMPd4)
 - #### [Multinomial](https://colab.research.google.com/drive/1L5k4pgTMPa2MmlKBp3bMVV0ruvfL2qjM#scrollTo=V-lSUczsTcWg)
-- For additional Models, please look under Matthew Lane's branch for jupyter notebook files
+- #### [Random Over Sampler](https://colab.research.google.com/drive/1pzY-EunwbphRaEXb_PaxAlGJcGqLmpbO?usp=sharing)
+- #### [Naive_bayes](https://colab.research.google.com/drive/1iWdpXxuCS0Xm3H02soyBwmtnGpabCa2L?usp=sharing)
+
 
 ### Machine Learning Overview
 Machine Learning is the field of study that gives computers the capability to learn without being explicitly programmed - Source: Geeks for Geeks
@@ -171,7 +253,7 @@ The Random Forest had the best results of the machine learning models. See below
 
 ![SupervisedMachineLearning](/Images/AccuracyScore.PNG)
 
-Some of the preprocessing to prep the model for machine learning includes:
+#### Some of the preprocessing to prep the model for machine learning includes:
 - Importing Libraries
 - Connecting to RDS database and bring in tables
 - Checking data types
@@ -181,11 +263,27 @@ Some of the preprocessing to prep the model for machine learning includes:
 - Create a correlation matrix to find any columns that can be dropped
 - Drop columns interfering with the accuracy score
 
-If more time was available I would:
+#### Feature Engineering
+The feature engineering was a process of trial and error. Figuring out which independent variables helped increase the accuracy score, precision score, and recall score the most with each machine learning model. Here are some of the variables that went into picking the feature selection:
+- Excluding victim information as it was blank in many cases where the crime against was property. 
+- Using a correlation function to exclude variables that we can predict one with the other. Selecting one of the variables helps speed up the machine learning model. 
+- Bucketing arrest age variable to lower the number of unique instances. Grouping data can help increase accuracy scores.  
+
+#### If more time was available:
 - Investigate bringing in new data sets to join in on the table to help increase the accuracy score. 
 - Test additional machine learning algorithms that are great with multi-class classification categorical data types. 
 - Run the machine learning model with a different dependent variable such as the “suspect using id”
 
+#### Splitting data into training and testing data sets
+ - This data was split into 75% training and 25% testing
+ - The random state was 1 meaning we would produce the same result each time the model is run.
+ - Stratify was set to y meaning it will assure the same proportions of each dependent variables are in the training and testing data sets. 
+
+#### Model choice, including limitations and benefits
+The Random Forest Model ended up being our model choice after going through trial and error with multiple supervised machine learning models. Supervised machine learning models were pinpointed because we had a large amount of clean data to train and test, perfect for supervised machine learning models. Other supervised machine learning models tested were Multinomial, Random Over Sampler, SMOTE Over Sampler, and Neural Networks. 
+- The Random Forest model had the best accuracy score, precision score, and recall score. 
+- Some benefits include powerful, accurate, works well with non-linear data, runs efficiently on a large dataset, flexible to both classification and regression problems, works well with categorical and continuous values. 
+- Some limitations include prone to overfitting and poor interpretability.
 
 ## HEROKU  :pushpin:
 
@@ -194,44 +292,4 @@ It is named [crime-dashboard-analysis](https://dashboard.heroku.com/apps/crime-d
 
 ________________________________________________________________________________________________________________________________________________________________
 
-# Segment 2 Deliverables for Data Analysis and Visualization (Becky)
-
-After some data visualization attempts with our previous iterations of the dataset the following was identified:
-
-•	Our data was incredibly skewed towards Crimes Against Persons, more specifically assaults, because we merged victim data information. When we did this, and removed NaN records, we removed all arrests where victim information was not available. In the Crimes Against category, there is often times not a victim for crime against property and/or society.
-
-o	By correcting this error, the majority of our arrests are actually for crimes against society
-
-## With Victim Information Joined to the Data
-*1=Person, 2=Property, 3=Society*
-![Adding_Victim_Info](https://user-images.githubusercontent.com/88041368/148650854-4eed1198-893e-499b-8476-e2c393654764.png)
-## Without Victim Information Joined to the Data
-*1=Person, 2=Property, 3=Society*
-![Removing_Victim_Info](https://user-images.githubusercontent.com/88041368/148650853-e4a7a429-8b93-4e37-8e39-e7ab2e1cb7fc.png)
-
-
-•	Our independent variables are mostly all categorical which is problematic for many machine learning models; linear regression is not an option. After some initial research, the best way forward may be to consider a logistic regression model. Specifically, a Multinomial Logistic Regression Model should be explored.
-https://machinelearningmastery.com/multinomial-logistic-regression-with-python/
-
-## Visualizations Conducted in Tableau to Further Explore our Data and Conduct Additional Analysis
-
-![Slide1](https://user-images.githubusercontent.com/88041368/149043761-748acf72-cf89-4864-8e23-49e83d34ee42.JPG)
-
-![Slide2](https://user-images.githubusercontent.com/88041368/149043762-ed817023-5630-4361-be97-795dc5febc00.JPG)
-
-![Slide3](https://user-images.githubusercontent.com/88041368/149043763-f4ff8b79-0179-4f36-8d10-9a9b102f7ee1.JPG)
-
-![Slide4](https://user-images.githubusercontent.com/88041368/149043759-3a1c7ffb-d486-40a2-b714-ee37f6e5cb00.JPG)
-
-## Tableau dashboard initial draft is posted on Tableau Public so we can begin to discuss necessary changes and design our website's html around the embedded visualization.
-
-### This dashboard is dynamic; when you click on a county, all the other data visualizations filter. The dashboard can be viewed here: https://public.tableau.com/app/profile/becky2270/viz/DRAFT_TEXAS_NIBRS_2017to2020_BJones/Dashboard1?publish=yes
-
-I’ve conducted a Tableau Blend Relationship between the raw arrest data and additional sociodemographic data I was able to find on Texas counties. The additional sociodemographic data was produced by the CDC’s Agency for Toxic Substances and Disease Registry for the annual Social Vulnerability Study. SVI provides specific socially and spatially relevant information to help public health officials and local planners better prepare communities to respond to emergency events such as severe weather, floods, disease outbreaks, or chemical exposure. This data also allowed me to generate additional data fields specific to our crime data.
-
-•	Arrest Rate per 100 Residents (Total Arrests per County/Total Population per County * 100)
-
-•	Estimated Arrests per Officer (Total Arrests per County/Total Officers per County)
-
-![TEXAS_NIBRS_2017to2020](https://user-images.githubusercontent.com/88041368/149702817-edf4556c-0ec3-44a1-9eb7-0eee3d4441fd.jpg)
 
