@@ -75,6 +75,63 @@ The information is hierarchal in nature; however, for the purpose of our initial
 
 The tables above were created by using the following schema:
 
+```
+--- DATA PROCESS TABLES
+
+arrestee_all
+-
+OFFENSE_TYPE_ID int pk fk - offense_type.OFFENSE_TYPE_ID
+ARR_AGE_NUM int
+ARR_SEX_CODE varchar
+ARR_RACE_ID int
+ARR_RESIDENT_CODE varchar
+ARRESTEE_ID int
+INCIDENT_ID int pk fk - incident_all.INCIDENT_ID
+
+incident_all
+-
+INCIDENT_DATE date
+INCIDENT_HOUR int
+AGENCY_ID int pk fk - agency_2020.AGENCY_ID
+INCIDENT_ID int pk
+
+
+offense_all
+-
+INCIDENT_ID int pk fk - incident_all.INCIDENT_ID
+OFFENSE_ID int pk
+LOCATION_ID int pk fk - NIBRS_LOCATION_TYPE.LOCATION_ID
+
+
+using_all
+-
+SUSPECT_USING_ID int
+OFFENSE_ID int pk fk - offense_all.OFFENSE_ID
+
+
+agency_2020
+-
+AGENCY_ID int pk
+AGENCY_TYPE_NAME varchar
+POPULATION int 
+SUBURBAN_AREA_FLAG varchar
+TOTAL_EMPLOYEES int
+COUNTY_NAME varchar
+
+
+offense_type
+-
+OFFENSE_TYPE_ID int pk
+CRIME_AGAINST varchar
+
+
+NIBRS_LOCATION_TYPE
+-
+LOCATION_ID int pk
+LOCATION_CODE varchar 
+LOCATION_NAME varchar
+Location_Type varchar
+```
 
 ### Successful Upload Datasets PySpark ETL
 
