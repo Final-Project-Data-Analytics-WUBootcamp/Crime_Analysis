@@ -133,6 +133,9 @@ LOCATION_NAME varchar
 Location_Type varchar
 ```
 
+### Google Colab Link ETL process from AWS to pdAdmin
+[AWS_database_connect_pgAdmin](https://colab.research.google.com/drive/14BlO0zgqK5SQ78v0lvVnbCD664GdwQ6f#scrollTo=bvY30Mslbgis)
+
 ### Successful Upload Datasets PySpark ETL
 
 Crime-data Dataset 2020 Upload Successful :white_check_mark:
