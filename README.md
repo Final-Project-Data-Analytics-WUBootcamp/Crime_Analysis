@@ -140,19 +140,19 @@ Location_Type varchar
 
 Crime-data Dataset 2020 Upload Successful :white_check_mark:
 
-![Data 2020](https://github.com/Final-Project-Data-Analytics-WUBootcamp/Crime_Analysis/blob/Alejandra/resources/Texas%202020.png)
+![Data 2020](https://github.com/Final-Project-Data-Analytics-WUBootcamp/Crime_Analysis/blob/main/PostgreSQL/Texas%202020.png)
 
 Crime-data Dataset 2019 Upload Successful :white_check_mark:
 
-![Data 2019](https://github.com/Final-Project-Data-Analytics-WUBootcamp/Crime_Analysis/blob/Alejandra/resources/Texas%202019.png)
+![Data 2019](https://github.com/Final-Project-Data-Analytics-WUBootcamp/Crime_Analysis/blob/main/PostgreSQL/Texas%202019.png)
 
 Crime-data Dataset 2018 Upload Successful :white_check_mark:
 
-![Data 2018](https://github.com/Final-Project-Data-Analytics-WUBootcamp/Crime_Analysis/blob/Alejandra/resources/Texas%202018.png)
+![Data 2018](https://github.com/Final-Project-Data-Analytics-WUBootcamp/Crime_Analysis/blob/main/PostgreSQL/Texas%202018.png)
 
 Crime-data Dataset 2017 Upload Successful :white_check_mark:
 
-![Data 2017](https://github.com/Final-Project-Data-Analytics-WUBootcamp/Crime_Analysis/blob/Alejandra/resources/Texas%202017.png)
+![Data 2017](https://github.com/Final-Project-Data-Analytics-WUBootcamp/Crime_Analysis/blob/main/PostgreSQL/Texas%202017.png)
 
 ## AWS connecting with PostgreSQL
 
