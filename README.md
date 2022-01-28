@@ -71,7 +71,7 @@ Most of the categorical information has already been made numeric; therefore, ma
 
 The information is hierarchal in nature; however, for the purpose of our initial analysis only a handful of the tables are necessary:
 
-![QuickDBD-export (8)](https://github.com/Final-Project-Data-Analytics-WUBootcamp/Crime_Analysis/blob/Alejandra/Schema_Crime_Analysis.png)
+![QuickDBD-export (8)](https://github.com/Final-Project-Data-Analytics-WUBootcamp/Crime_Analysis/blob/main/PostgreSQL/Schema_Crime_Analysis.png)
 
 The tables above were created by using the following schema:
 
